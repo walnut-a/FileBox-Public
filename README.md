@@ -1,9 +1,13 @@
 # FileBox 产品介绍文档
 
 ## 0. 产品下载
-[点击链接](https://github.com/walnut-a/FileBox-Public/releases/tag/Release)下载最新版本，仅支持macOS。
+[点击链接](https://github.com/walnut-a/FileBox-Public/releases/tag/Release)下载最新版本，仅支持 macOS。
 
-安装方法：双击打开DMG文件后，将FIleBOx图标拖拽到右侧Application文件夹。
+**安装方法**：双击打开 DMG 文件后，将 FIleBox 图标拖拽到右侧 Application 文件夹。
+
+**使用技巧**：FileBox 完全在本地运行，你可以借助 iCloud 实现多设备之间的文件夹同步。比如将常用素材放在收藏文件夹，并开启 iCloud 同步，便可以在多个设备上借助 FileBox 快速调用文件。
+
+FileBox 全程通过 [Antigravity](https://antigravity.google/) 构建，下方介绍文档亦由 Gemini 3 Pro生成。
 
 ## 1. 产品概述
 **FileBox** 是一款专为 macOS 设计的现代化文件管理与中转工具。它旨在解决用户在日常工作中频繁查找、移动和临时存储文件的痛点。通过提供一个始终触手可及的“快捷面板” (Quick Panel) 和精心设计的“中转站” (Transit) 概念，FileBox 让文件的临时存放与流转变得前所未有的流畅与优雅。

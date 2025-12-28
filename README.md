@@ -19,6 +19,8 @@ FileBox 全程通过 [Antigravity](https://antigravity.google/) 构建，下方�
 
 FileBox 不仅仅是一个文件浏览器，它是你桌面工作流的高效润滑剂，完美融合了 macOS 原生设计美学与极客级的效率工具特性。
 
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nnfe.png?raw=true)
+
 ## 2. 核心亮点
 
 ### 🚀 快捷面板 (Quick Panel)
@@ -26,6 +28,8 @@ FileBox 提供了一个类似 Spotlight 的全局 HUD 快捷面板。
 - **随叫随到**：通过全局快捷键（默认 `Ctrl+Option+Space`，可自定义）一键唤出。
 - **智能跟随**：面板出现位置可配置为“主屏幕”、“当前活动窗口所在屏幕”或“鼠标位置”，确保文件总是在你最顺手的地方。
 - **迷你文件流**：在不打断当前工作流的情况下，快速浏览、拖拽或打开最近的文件。
+
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nnpy.jpeg?raw=true)
 
 ### 🚉 文件中转站 (Transit)
 不再让桌面堆满临时文件。FileBox 的“中转站”是你处理临时文件的最佳场所。
@@ -58,6 +62,8 @@ FileBox 提供了一个类似 Spotlight 的全局 HUD 快捷面板。
 - **启动管理**：支持开机自启，确保工具时刻待命。
 - **多语言支持**：内置完善的中英文国际化支持。
 - **菜单栏常驻**：通过菜单栏图标也可快速访问或唤起面板。
+
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nntv.png?raw=true)
 
 ## 4. 使用场景
 

@@ -29,7 +29,7 @@ FileBox 提供了一个类似 Spotlight 的全局 HUD 快捷面板。
 - **智能跟随**：面板出现位置可配置为“主屏幕”、“当前活动窗口所在屏幕”或“鼠标位置”，确保文件总是在你最顺手的地方。
 - **迷你文件流**：在不打断当前工作流的情况下，快速浏览、拖拽或打开最近的文件。
 
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nnpy.jpeg?raw=true)
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nsql.png?raw=true)
 
 ### 🚉 文件中转站 (Transit)
 不再让桌面堆满临时文件。FileBox 的“中转站”是你处理临时文件的最佳场所。

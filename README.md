@@ -1,7 +1,7 @@
 # FileBox 产品介绍文档
 
 ## 0. 产品下载与安装
-**下载软件**：[点击链接](https://github.com/walnut-a/FileBox-Public/releases/tag/Release)下载最新版本，仅支持 macOS。
+**下载软件**：[点击链接](https://github.com/walnut-a/FileBox-Public/releases)下载最新版本，仅支持 macOS。
 
 **安装方法**：双击打开 DMG 文件后，将 FIleBox 图标拖拽到右侧 Application 文件夹。
 

@@ -10,7 +10,7 @@
 **已知问题**：
 
 - [ ] 在macOS Tahoe以下的版本中，可能会出现样式不正确的情况
-- [ ] 部分情况下FileBox显示文件会有明显延迟
+- [x] 部分情况下FileBox显示文件会有明显延迟
 
 FileBox 全程通过 [Antigravity](https://antigravity.google/) 构建，下方介绍文档亦由 Gemini 3 Pro生成。
 

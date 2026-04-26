@@ -1,0 +1,14 @@
+name: filebox-activity
+description: Read FileBox folders and Recent Activity through the bundled read-only CLI.
+instructions: |
+  Use this skill when the user wants to inspect FileBox common folders, monitored folders, or recent file changes.
+  Start with `filebox --capabilities --json`.
+  Prefer `filebox activity --focused --json --limit 20` for recent files.
+  Use `filebox folders --json` to understand configured folders.
+  Treat every result as read-only context unless the user separately asks for file operations.
+commands:
+  capabilities: filebox --capabilities --json
+  folders: filebox folders --json
+  activity_focused: filebox activity --focused --json --limit 20
+  activity_all: filebox activity --all --json --limit 50
+  activity_paths: filebox activity --focused --path-only --limit 20

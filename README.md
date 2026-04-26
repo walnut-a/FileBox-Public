@@ -7,6 +7,8 @@
 
 **核心特点**：FileBox 完全在本地运行，核心功能是提供快捷访问文件夹的界面，并不会干涉文件的存储与处理，所以并不会有导致文件丢失或损毁的风险。
 
+**Agent / CLI Skill**：面向 Agent 的公开 Skill 位于 [`skills/filebox-activity`](./skills/filebox-activity)。安装 FileBox 后，可以在应用内 `设置` -> `通用` -> `命令行工具` 安装只读 `filebox` 命令，用来查询常用目录和最近动态。
+
 **已知问题**：
 
 - [ ] 在macOS Tahoe以下的版本中，可能会出现样式不正确的情况

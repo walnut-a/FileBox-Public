@@ -64,7 +64,7 @@ CLI 与 Skill 的完整中文说明见 [`docs/agent-cli-and-skill.md`](./docs/ag
 
 FileBox 提供一个轻量快捷窗口，可以通过全局快捷键呼出，在不打断当前工作的情况下快速访问常用文件夹。
 
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-quick-window-20260428.png?raw=true)
+<img src="https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-quick-window-20260428.png?raw=true" alt="FileBox 快捷窗口" width="560">
 
 ### 常用目录
 

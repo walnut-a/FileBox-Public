@@ -9,6 +9,12 @@ private_source_root="/Users/zhaolixing/GitHub/""filebox"
 
 required_files=(
     "README.md"
+    "package.json"
+    "bin/filebox-agent-skill.js"
+    "lib/installer.js"
+    "scripts/check_no_secrets.sh"
+    "scripts/check_npm_package_no_secrets.sh"
+    "docs/agent-cli-and-skill.md"
     "skills/filebox-activity/SKILL.md"
     "skills/filebox-activity/agents/openai.yaml"
 )

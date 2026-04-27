@@ -56,19 +56,21 @@ npx filebox-agent-skill install
 
 CLI 与 Skill 的完整中文说明见 [`docs/agent-cli-and-skill.md`](./docs/agent-cli-and-skill.md)。
 
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-settings-cli-20260428.png?raw=true)
+
 ## 核心功能
 
 ### 快捷窗口
 
 FileBox 提供一个轻量快捷窗口，可以通过全局快捷键呼出，在不打断当前工作的情况下快速访问常用文件夹。
 
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nsql.png?raw=true)
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-quick-window-20260428.png?raw=true)
 
 ### 常用目录
 
 可以把下载、桌面、项目目录、素材目录等路径加入左侧常用目录，减少反复在 Finder 中查找路径的时间。
 
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nnfe.png?raw=true)
+![](https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-main-window-20260428.png?raw=true)
 
 ### 文件动态
 
@@ -77,8 +79,6 @@ FileBox 可以关注配置目录中的文件变化，并按目录分组展示最
 ### 中转与收藏
 
 中转适合临时放置稍后要处理的文件，收藏适合固定常用文件或素材。拖拽行为可以在设置中配置为复制或移动。
-
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/SCR-20251228-nntv.png?raw=true)
 
 ## 维护检查
 

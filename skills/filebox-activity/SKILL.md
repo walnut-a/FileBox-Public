@@ -1,13 +1,13 @@
 ---
 name: filebox-activity
-description: Use when a macOS user wants an agent to inspect FileBox common folders, monitored folders, or Recent Activity paths without modifying files.
+description: Use when a macOS user wants an agent to inspect FileBox common folders, monitored folders, or File Activity paths without modifying files.
 ---
 
 # FileBox Activity
 
 ## Overview
 
-FileBox provides a read-only `filebox` CLI for agents that need to see important folders and recent file changes. The CLI returns paths and metadata only; file operations remain the user's decision.
+FileBox provides a read-only FileBox CLI for agents that need to see important folders and File Activity changes. The terminal command is `filebox`. The CLI returns paths and metadata only; file operations remain the user's decision.
 
 ## Preconditions
 
@@ -23,7 +23,7 @@ filebox --capabilities --json
 
 1. Confirm the CLI exists with `filebox --capabilities --json`.
 2. Read configured folders with `filebox folders --json`.
-3. Read recent activity with `filebox activity --focused --json --limit 20`.
+3. Read File Activity with `filebox activity --focused --json --limit 20`.
 4. Use `--all` only when the focused file extensions look too narrow.
 5. Use `--refresh` only when the user says the cache looks stale, because refresh scans configured monitored folders.
 
@@ -33,8 +33,8 @@ filebox --capabilities --json
 | --- | --- |
 | Check capabilities | `filebox --capabilities --json` |
 | List monitored folders | `filebox folders --json` |
-| Read focused recent activity | `filebox activity --focused --json --limit 20` |
-| Read all recent activity | `filebox activity --all --json --limit 50` |
+| Read focused File Activity | `filebox activity --focused --json --limit 20` |
+| Read all File Activity | `filebox activity --all --json --limit 50` |
 | Get paths only | `filebox activity --focused --path-only --limit 20` |
 | Limit by time | `filebox activity --focused --json --since 3d` |
 | Refresh cache before reading | `filebox activity --focused --json --refresh --limit 20` |
@@ -73,7 +73,7 @@ filebox --capabilities --json
 - Prefer `--focused` first; it follows the user's configured file extensions such as `md`, `app`, or `dmg`.
 - Use `--path-only` only when another tool needs a simple path list.
 - If output is empty, report that FileBox has no matching cached activity instead of guessing.
-- If `filebox` is missing, ask the user to install the CLI from FileBox settings.
+- If the FileBox CLI is missing, ask the user to install it from FileBox settings.
 
 ## Common Mistakes
 

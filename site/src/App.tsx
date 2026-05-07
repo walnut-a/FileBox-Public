@@ -268,9 +268,14 @@ export default function App() {
     <div className="site-shell">
       <header className="topbar" aria-label="FileBox">
         <a className="brand" href="#top" aria-label="FileBox home">
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-          </span>
+          <img
+            className="brand-mark"
+            src="/images/filebox-app-icon-20260425.png"
+            alt=""
+            width="36"
+            height="36"
+            aria-hidden="true"
+          />
           <span>FileBox</span>
         </a>
         <nav className="nav-links" aria-label="Primary navigation">

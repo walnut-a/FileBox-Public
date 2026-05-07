@@ -13,6 +13,9 @@
     "README.md"
   ],
   "scripts": {
+    "site:dev": "npm --prefix site run dev",
+    "site:build": "npm --prefix site run build",
+    "site:preview": "npm --prefix site run preview",
     "test": "node --test test/*.test.js",
     "check:secrets": "./scripts/check_no_secrets.sh",
     "check:package": "./scripts/check_npm_package_no_secrets.sh",

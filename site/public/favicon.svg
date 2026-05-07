@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FileBox">
+  <rect width="64" height="64" rx="16" fill="#f0dfcc"/>
+  <path d="M15 23.5 32 14l17 9.5v18.8L32 52 15 42.3Z" fill="#d79a62"/>
+  <path d="M15 23.5 32 33l17-9.5L32 14Z" fill="#f2c99f"/>
+  <path d="M31 14.6 49 24.5v8.6L31 23Z" fill="#4a4741"/>
+  <path d="M15 23.5 32 33v19L15 42.3Z" fill="#c6814f"/>
+  <path d="M32 33 49 23.5v18.8L32 52Z" fill="#de9d63"/>
+</svg>

@@ -1,13 +1,8 @@
-import * as Accordion from "@radix-ui/react-accordion";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import {
   ArrowDownToLine,
-  ChevronDown,
-  FolderOpen,
   Languages,
-  ListChecks,
   Monitor,
-  ShieldCheck,
   TerminalSquare
 } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -18,11 +13,6 @@ type Feature = {
   label: string;
   title: string;
   body: string;
-};
-
-type Faq = {
-  question: string;
-  answer: string;
 };
 
 const downloadURL = "https://github.com/walnut-a/FileBox-Public/releases/latest";
@@ -42,22 +32,16 @@ const copy: Record<
     latest: string;
     system: string;
     screenshotAlt: string;
-    windowNote: string;
     valueTitle: string;
     valueLead: string;
     features: Feature[];
     workflowTitle: string;
     workflowLead: string;
     workflow: Feature[];
-    localTitle: string;
-    localLead: string;
-    localPoints: string[];
     cliTitle: string;
     cliLead: string;
     cliCommand: string;
     cliNote: string;
-    faqTitle: string;
-    faqs: Faq[];
     downloadTitle: string;
     downloadLead: string;
     downloadButton: string;
@@ -70,83 +54,56 @@ const copy: Record<
     langLabel: "语言",
     eyebrow: "FileBox for macOS",
     heroTitle: "文件更近。",
-    heroLead:
-      "把桌面、下载、项目文件夹和文件动态收在一起。FileBox 不替代 Finder，只把你每天都会打开的那几个位置变得更近。",
+    heroLead: "常用目录、快捷窗口、文件动态和 Agent 路径查询，一个入口就够了。",
     primaryCta: "下载 FileBox",
     secondaryCta: "查看 CLI 文档",
     latest: "最新版本 1.4.2",
     system: "macOS 13.0+",
     screenshotAlt: "FileBox 主窗口截图",
-    windowNote: "主窗口、快捷窗口和文件动态使用同一份本地目录上下文。",
     valueTitle: "为高频文件夹做得更快一点。",
-    valueLead:
-      "FileBox 的重点不是管理一切，而是让桌面、下载、项目、素材这些常用位置更容易抵达。",
+    valueLead: "FileBox 不替代 Finder，只把每天都会打开的位置变得更近。",
     features: [
       {
         label: "01",
         title: "常用目录",
-        body: "把最常打开的文件夹固定在一个轻量侧栏里，减少在 Finder 里反复寻找。"
+        body: "把最常打开的文件夹固定在一个轻量侧栏里。"
       },
       {
         label: "02",
         title: "快捷窗口",
-        body: "用全局快捷键呼出小窗口，按 Tab 切换目录，快速处理下载和临时文件。"
+        body: "用快捷键呼出小窗口，按 Tab 切换目录。"
       },
       {
         label: "03",
         title: "文件动态",
-        body: "关注目录里的最新文件变化，并按目录分组展示，避免被大量无关文件淹没。"
+        body: "按目录查看最新变化，减少无关文件干扰。"
       }
     ],
-    workflowTitle: "界面给人用，CLI 给 Agent 用。",
-    workflowLead:
-      "图形界面负责日常浏览，CLI 负责把路径和文件动态交给终端、脚本或 Agent。FileBox 只读输出，不替你操作文件。",
+    workflowTitle: "界面处理文件，CLI 交给 Agent。",
+    workflowLead: "FileBox 保持本地优先。CLI 只读输出路径和文件动态，不替你操作文件。",
     workflow: [
       {
         label: "Browse",
         title: "在界面里整理日常文件",
-        body: "打开常用目录、预览文件、查看文件动态，仍然保留 Mac 原生文件使用习惯。"
+        body: "打开常用目录、预览文件、查看文件动态。"
       },
       {
         label: "Focus",
         title: "用关注后缀减少噪音",
-        body: "优先看 md、app、dmg、pdf 这类重要格式，全部动态也可以随时切回。"
+        body: "优先看 md、app、dmg、pdf 这类重要格式。"
       },
       {
         label: "Ask",
         title: "把路径交给 Agent",
-        body: "CLI 输出 JSON 或路径列表，Agent 可以基于这些路径继续阅读、总结或处理。"
+        body: "输出 JSON 或路径列表，让 Agent 继续阅读。"
       }
     ],
-    localTitle: "本地优先，动作边界清楚。",
-    localLead:
-      "FileBox 读取你的本地目录和缓存。CLI 只返回路径和元数据，不移动、不删除、不重命名文件。",
-    localPoints: ["不需要账户", "不上传文件内容", "CLI 默认只读", "文件操作由用户决定"],
     cliTitle: "给 Agent 的只读入口",
-    cliLead:
-      "安装 App 后，可以在设置里安装 filebox 命令。Agent Skill 会告诉模型如何安全调用它。",
+    cliLead: "安装 App 后，可以在设置里安装 FileBox CLI。Agent Skill 会说明调用方式。",
     cliCommand: "npx filebox-agent-skill install",
     cliNote: "如果你只是自己查看文件动态，安装 App 内置 CLI 就够了。",
-    faqTitle: "常见问题",
-    faqs: [
-      {
-        question: "FileBox 会替代 Finder 吗？",
-        answer:
-          "不会。FileBox 更像一个快捷入口，适合高频目录、临时文件和最近变化。真正的系统文件管理仍然交给 Finder。"
-      },
-      {
-        question: "文件动态会扫描所有目录吗？",
-        answer:
-          "不会。它只关注你配置的常用目录或手动添加的监控目录，并且会用缓存和上限控制开销。"
-      },
-      {
-        question: "CLI 可以操作文件吗？",
-        answer:
-          "不可以。CLI 只返回路径和元数据。如果用户或 Agent 要继续处理文件，下一步动作需要由用户明确决定。"
-      }
-    ],
     downloadTitle: "把 FileBox 放到你的 Mac 上。",
-    downloadLead: "下载最新版，放进 Applications 文件夹，然后配置你的常用目录。",
+    downloadLead: "下载最新版，放进 Applications 文件夹，然后配置常用目录。",
     downloadButton: "下载 FileBox",
     releaseLink: "查看历史版本",
     footer: "FileBox 是一个本地优先的 macOS 文件快捷访问工具。"
@@ -156,83 +113,56 @@ const copy: Record<
     langLabel: "Language",
     eyebrow: "FileBox for macOS",
     heroTitle: "Mac files, closer.",
-    heroLead:
-      "Keep Desktop, Downloads, project folders, and file activity close at hand. FileBox does not replace Finder; it shortens the paths you touch every day.",
+    heroLead: "Favorite folders, quick access, file activity, and Agent-ready paths in one small Mac utility.",
     primaryCta: "Download FileBox",
     secondaryCta: "Read CLI docs",
     latest: "Latest version 1.4.2",
     system: "macOS 13.0+",
     screenshotAlt: "FileBox main window screenshot",
-    windowNote: "Main window, quick panel, and file activity share one local folder context.",
     valueTitle: "A faster lane for the folders you use most.",
-    valueLead:
-      "FileBox is not trying to manage everything. It keeps the folders that matter most easier to reach.",
+    valueLead: "FileBox does not replace Finder. It simply shortens the paths you touch every day.",
     features: [
       {
         label: "01",
         title: "Favorite folders",
-        body: "Pin the folders you open constantly in a lightweight sidebar instead of hunting through Finder again."
+        body: "Pin the folders you open constantly in a lightweight sidebar."
       },
       {
         label: "02",
         title: "Quick panel",
-        body: "Call up a compact window with a global shortcut, switch folders with Tab, and handle temporary files faster."
+        body: "Call up a compact window and switch folders with Tab."
       },
       {
         label: "03",
         title: "File activity",
-        body: "See recent changes grouped by folder, with focused file extensions to keep noisy directories readable."
+        body: "Review recent changes grouped by folder."
       }
     ],
-    workflowTitle: "A visual app for people. A read-only CLI for Agents.",
-    workflowLead:
-      "The app handles everyday browsing. The CLI gives terminals, scripts, and Agents read-only access to folders and file activity.",
+    workflowTitle: "A visual app for people. A CLI for Agents.",
+    workflowLead: "The app handles daily browsing. The CLI returns paths and file activity without modifying files.",
     workflow: [
       {
         label: "Browse",
         title: "Work with files in a familiar Mac flow",
-        body: "Open folders, preview files, and review activity without abandoning native file habits."
+        body: "Open folders, preview files, and review activity."
       },
       {
         label: "Focus",
         title: "Reduce noise with focused extensions",
-        body: "Prioritize md, app, dmg, pdf, or your own important formats while keeping the all-activity view nearby."
+        body: "Prioritize md, app, dmg, pdf, or your own formats."
       },
       {
         label: "Ask",
         title: "Hand paths to an Agent",
-        body: "The CLI returns JSON or plain paths, so Agents can read, summarize, or continue from your current file context."
+        body: "Return JSON or plain paths for an Agent to continue."
       }
     ],
-    localTitle: "Local-first, with clear action boundaries.",
-    localLead:
-      "FileBox reads local folders and local cache. The CLI returns paths and metadata only; it does not move, delete, rename, or modify files.",
-    localPoints: ["No account required", "No file contents uploaded", "Read-only CLI by default", "File actions stay user-directed"],
     cliTitle: "A read-only entry point for Agents",
-    cliLead:
-      "After installing the app, enable the filebox command in Settings. The Agent Skill teaches compatible Agents how to call it safely.",
+    cliLead: "After installing the app, enable the FileBox CLI in Settings. The Agent Skill explains how to call it.",
     cliCommand: "npx filebox-agent-skill install",
     cliNote: "If you only need terminal access, the built-in CLI is enough.",
-    faqTitle: "Questions",
-    faqs: [
-      {
-        question: "Does FileBox replace Finder?",
-        answer:
-          "No. FileBox is a faster entry point for favorite folders, temporary files, and recent changes. Finder remains the system file manager."
-      },
-      {
-        question: "Does file activity scan everything?",
-        answer:
-          "No. It watches configured favorite folders or manually added monitored folders, with cache and display limits to keep the experience lightweight."
-      },
-      {
-        question: "Can the CLI operate on files?",
-        answer:
-          "No. The CLI only returns paths and metadata. Any follow-up file operation should be explicitly decided by the user."
-      }
-    ],
     downloadTitle: "Put FileBox on your Mac.",
-    downloadLead: "Download the latest release, drag it into Applications, and set up the folders you touch every day.",
+    downloadLead: "Download the latest release, drag it into Applications, and set up your folders.",
     downloadButton: "Download FileBox",
     releaseLink: "View release history",
     footer: "FileBox is a local-first macOS file access utility."
@@ -348,13 +278,8 @@ export default function App() {
           </div>
 
           <div className="hero-art" aria-label={text.screenshotAlt}>
-            <div className="desk-label">{text.windowNote}</div>
             <div className="window-card">
               <img src="/images/filebox-main-window-20260428.png" alt={text.screenshotAlt} fetchPriority="high" />
-            </div>
-            <div className="floating-note">
-              <FolderOpen aria-hidden="true" size={18} />
-              <span>Downloads / GitHub / Desktop</span>
             </div>
           </div>
         </section>
@@ -400,24 +325,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="section local-section">
-          <div className="local-card">
-            <ShieldCheck aria-hidden="true" size={32} />
-            <div>
-              <h2>{text.localTitle}</h2>
-              <p>{text.localLead}</p>
-            </div>
-            <ul>
-              {text.localPoints.map((point) => (
-                <li key={point}>
-                  <ListChecks aria-hidden="true" size={16} />
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
         <section id="cli" className="section cli-section">
           <div className="cli-copy">
             <p className="eyebrow">CLI / Agent Skill</p>
@@ -433,28 +340,6 @@ export default function App() {
             </div>
             <code>{text.cliCommand}</code>
           </div>
-        </section>
-
-        <section className="section faq-section">
-          <div className="section-heading compact">
-            <p className="eyebrow">Notes</p>
-            <h2>{text.faqTitle}</h2>
-          </div>
-          <Accordion.Root type="single" collapsible className="faq-list">
-            {text.faqs.map((item, index) => (
-              <Accordion.Item className="faq-item" value={`item-${index}`} key={item.question}>
-                <Accordion.Header>
-                  <Accordion.Trigger>
-                    {item.question}
-                    <ChevronDown aria-hidden="true" size={18} />
-                  </Accordion.Trigger>
-                </Accordion.Header>
-                <Accordion.Content className="faq-content">
-                  <p>{item.answer}</p>
-                </Accordion.Content>
-              </Accordion.Item>
-            ))}
-          </Accordion.Root>
         </section>
 
         <section id="download" className="download-section">

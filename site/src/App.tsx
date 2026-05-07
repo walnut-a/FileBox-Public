@@ -68,19 +68,19 @@ const copy: Record<
   zh: {
     nav: ["功能", "工作流", "CLI", "下载"],
     langLabel: "语言",
-    eyebrow: "macOS 本地文件工作区",
-    heroTitle: "把常用目录、文件动态和 Agent 路径查询，收进一个安静入口。",
+    eyebrow: "FileBox for macOS",
+    heroTitle: "文件更近。",
     heroLead:
-      "FileBox 是一个留在本地运行的 Mac 文件工具。它不试图替代 Finder，而是在你真正高频的地方，提供更短的路径、更少的打断和更清楚的文件变化。",
-    primaryCta: "下载最新版",
+      "把桌面、下载、项目文件夹和文件动态收在一起。FileBox 不替代 Finder，只把你每天都会打开的那几个位置变得更近。",
+    primaryCta: "下载 FileBox",
     secondaryCta: "查看 CLI 文档",
     latest: "最新版本 1.4.2",
     system: "macOS 13.0+",
     screenshotAlt: "FileBox 主窗口截图",
-    windowNote: "主窗口、快捷窗口和文件动态共享同一套目录上下文。",
-    valueTitle: "不是新的文件系统，只是更靠近你的那几个目录。",
+    windowNote: "主窗口、快捷窗口和文件动态使用同一份本地目录上下文。",
+    valueTitle: "为高频文件夹做得更快一点。",
     valueLead:
-      "FileBox 的设计重点不是把所有文件都管起来，而是把桌面、下载、项目、素材这些高频位置变得更容易抵达。",
+      "FileBox 的重点不是管理一切，而是让桌面、下载、项目、素材这些常用位置更容易抵达。",
     features: [
       {
         label: "01",
@@ -98,7 +98,7 @@ const copy: Record<
         body: "关注目录里的最新文件变化，并按目录分组展示，避免被大量无关文件淹没。"
       }
     ],
-    workflowTitle: "从人到 Agent，都拿同一份路径上下文。",
+    workflowTitle: "界面给人用，CLI 给 Agent 用。",
     workflowLead:
       "图形界面负责日常浏览，CLI 负责把路径和文件动态交给终端、脚本或 Agent。FileBox 只读输出，不替你操作文件。",
     workflow: [
@@ -118,7 +118,7 @@ const copy: Record<
         body: "CLI 输出 JSON 或路径列表，Agent 可以基于这些路径继续阅读、总结或处理。"
       }
     ],
-    localTitle: "本地优先，边界清楚。",
+    localTitle: "本地优先，动作边界清楚。",
     localLead:
       "FileBox 读取你的本地目录和缓存。CLI 只返回路径和元数据，不移动、不删除、不重命名文件。",
     localPoints: ["不需要账户", "不上传文件内容", "CLI 默认只读", "文件操作由用户决定"],
@@ -145,8 +145,8 @@ const copy: Record<
           "不可以。CLI 只返回路径和元数据。如果用户或 Agent 要继续处理文件，下一步动作需要由用户明确决定。"
       }
     ],
-    downloadTitle: "准备好让文件入口安静一点了吗？",
-    downloadLead: "下载最新版 FileBox，把它放进 Applications 文件夹，就可以开始配置你的常用目录。",
+    downloadTitle: "把 FileBox 放到你的 Mac 上。",
+    downloadLead: "下载最新版，放进 Applications 文件夹，然后配置你的常用目录。",
     downloadButton: "下载 FileBox",
     releaseLink: "查看历史版本",
     footer: "FileBox 是一个本地优先的 macOS 文件快捷访问工具。"
@@ -154,19 +154,19 @@ const copy: Record<
   en: {
     nav: ["Features", "Workflow", "CLI", "Download"],
     langLabel: "Language",
-    eyebrow: "A local file workspace for macOS",
-    heroTitle: "Keep favorite folders, file activity, and Agent-ready paths in one calm place.",
+    eyebrow: "FileBox for macOS",
+    heroTitle: "Mac files, closer.",
     heroLead:
-      "FileBox is a local Mac utility that does not try to replace Finder. It shortens the few paths you touch all day, keeps recent changes readable, and gives Agents a safe way to query file context.",
-    primaryCta: "Download latest",
+      "Keep Desktop, Downloads, project folders, and file activity close at hand. FileBox does not replace Finder; it shortens the paths you touch every day.",
+    primaryCta: "Download FileBox",
     secondaryCta: "Read CLI docs",
     latest: "Latest version 1.4.2",
     system: "macOS 13.0+",
     screenshotAlt: "FileBox main window screenshot",
-    windowNote: "Main window, quick panel, and file activity share the same folder context.",
-    valueTitle: "Not a new file system. Just closer to the folders you actually use.",
+    windowNote: "Main window, quick panel, and file activity share one local folder context.",
+    valueTitle: "A faster lane for the folders you use most.",
     valueLead:
-      "FileBox is built around the places that matter most: Desktop, Downloads, project folders, handoff folders, and the files that changed recently.",
+      "FileBox is not trying to manage everything. It keeps the folders that matter most easier to reach.",
     features: [
       {
         label: "01",
@@ -184,7 +184,7 @@ const copy: Record<
         body: "See recent changes grouped by folder, with focused file extensions to keep noisy directories readable."
       }
     ],
-    workflowTitle: "One folder context for you, your terminal, and your Agent.",
+    workflowTitle: "A visual app for people. A read-only CLI for Agents.",
     workflowLead:
       "The app handles everyday browsing. The CLI gives terminals, scripts, and Agents read-only access to folders and file activity.",
     workflow: [
@@ -204,7 +204,7 @@ const copy: Record<
         body: "The CLI returns JSON or plain paths, so Agents can read, summarize, or continue from your current file context."
       }
     ],
-    localTitle: "Local-first, with clear boundaries.",
+    localTitle: "Local-first, with clear action boundaries.",
     localLead:
       "FileBox reads local folders and local cache. The CLI returns paths and metadata only; it does not move, delete, rename, or modify files.",
     localPoints: ["No account required", "No file contents uploaded", "Read-only CLI by default", "File actions stay user-directed"],
@@ -231,8 +231,8 @@ const copy: Record<
           "No. The CLI only returns paths and metadata. Any follow-up file operation should be explicitly decided by the user."
       }
     ],
-    downloadTitle: "Ready for a quieter file entry point?",
-    downloadLead: "Download the latest FileBox, drag it into Applications, and set up the folders you touch every day.",
+    downloadTitle: "Put FileBox on your Mac.",
+    downloadLead: "Download the latest release, drag it into Applications, and set up the folders you touch every day.",
     downloadButton: "Download FileBox",
     releaseLink: "View release history",
     footer: "FileBox is a local-first macOS file access utility."
@@ -244,6 +244,10 @@ function getInitialLocale(): Locale {
     return "zh";
   }
   const saved = window.localStorage.getItem("filebox-site-locale");
+  const requested = new URLSearchParams(window.location.search).get("lang");
+  if (requested === "zh" || requested === "en") {
+    return requested;
+  }
   if (saved === "zh" || saved === "en") {
     return saved;
   }
@@ -275,6 +279,25 @@ export default function App() {
           <a href="#cli">{text.nav[2]}</a>
           <a href="#download">{text.nav[3]}</a>
         </nav>
+        <div className="mobile-language-control" aria-label={text.langLabel}>
+          <ToggleGroup.Root
+            type="single"
+            value={locale}
+            onValueChange={(value) => {
+              if (value === "zh" || value === "en") {
+                setLocale(value);
+              }
+            }}
+            aria-label={text.langLabel}
+          >
+            <ToggleGroup.Item value="zh" aria-label="中文">
+              中
+            </ToggleGroup.Item>
+            <ToggleGroup.Item value="en" aria-label="English">
+              EN
+            </ToggleGroup.Item>
+          </ToggleGroup.Root>
+        </div>
         <div className="language-control" aria-label={text.langLabel}>
           <Languages aria-hidden="true" size={16} />
           <ToggleGroup.Root

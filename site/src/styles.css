@@ -215,6 +215,8 @@ h2,
 h3,
 p {
   margin: 0;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 h1,
@@ -242,8 +244,8 @@ h1 {
 
 h2 {
   max-width: 760px;
-  font-size: clamp(2rem, 4vw, 4.05rem);
-  line-height: 1;
+  font-size: clamp(2rem, 3.35vw, 3.45rem);
+  line-height: 1.06;
   text-wrap: balance;
 }
 
@@ -347,6 +349,13 @@ h3 {
   height: auto;
 }
 
+.quick-shot img {
+  clip-path: inset(12px 18px 12px 18px round 28px);
+  filter: drop-shadow(0 22px 48px oklch(0.34 0.028 68 / 0.14));
+  transform: scale(1.035);
+  transform-origin: center;
+}
+
 .window-card::after {
   position: absolute;
   inset: 0;
@@ -434,10 +443,8 @@ h3 {
 .quick-shot {
   overflow: hidden;
   min-width: 0;
-  border: 1px solid color-mix(in oklch, var(--line-strong), transparent 30%);
   border-radius: var(--radius-xl);
-  background: var(--surface);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
 }
 
 .workflow-list {
@@ -489,7 +496,7 @@ h3 {
 
 .local-card h2 {
   max-width: 760px;
-  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 
 .local-card ul {
@@ -652,7 +659,8 @@ footer a {
 
 @media (max-width: 920px) {
   .site-shell {
-    width: min(100% - 28px, 760px);
+    width: calc(100vw - 28px);
+    max-width: 760px;
   }
 
   .topbar {
@@ -712,7 +720,39 @@ footer a {
   }
 }
 
+@media (min-width: 621px) and (max-width: 920px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: var(--space-3xl);
+  }
+
+  .brand {
+    order: initial;
+  }
+
+  .nav-links {
+    flex: initial;
+    order: initial;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .language-control {
+    display: flex;
+  }
+
+  .mobile-language-control {
+    display: none;
+  }
+}
+
 @media (max-width: 620px) {
+  .site-shell {
+    max-width: 330px;
+  }
+
   body::before {
     display: none;
   }
@@ -767,8 +807,9 @@ footer a {
   }
 
   h2 {
-    font-size: clamp(2rem, 9vw, 2.55rem);
-    line-height: 1.08;
+    font-size: clamp(1.9rem, 8vw, 2.28rem);
+    line-height: 1.12;
+    overflow-wrap: break-word;
   }
 
   .floating-note {
@@ -777,7 +818,16 @@ footer a {
   }
 
   .hero-art {
+    width: 100%;
+    max-width: 330px;
     overflow: hidden;
+  }
+
+  .desk-label,
+  .section-copy,
+  .section-heading,
+  .cli-copy {
+    max-width: 330px;
   }
 
   .window-card {
@@ -786,10 +836,10 @@ footer a {
   }
 
   .window-card img {
-    width: auto;
-    max-width: none;
+    width: 100%;
     height: 100%;
-    transform: translateX(-7%);
+    object-fit: cover;
+    object-position: left top;
   }
 
   .section {

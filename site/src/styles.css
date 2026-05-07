@@ -1,26 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap");
 
 :root {
   color-scheme: light;
-  --ink: oklch(0.23 0.018 74);
-  --ink-muted: oklch(0.52 0.017 74);
-  --ink-soft: oklch(0.64 0.014 74);
-  --paper: oklch(0.985 0.008 84);
-  --paper-warm: oklch(0.958 0.017 80);
-  --surface: oklch(0.997 0.005 84);
-  --surface-soft: oklch(0.972 0.012 82);
-  --surface-deep: oklch(0.935 0.021 78);
-  --line: oklch(0.86 0.015 78);
-  --line-strong: oklch(0.76 0.024 74);
-  --accent: oklch(0.61 0.078 58);
-  --accent-soft: oklch(0.9 0.042 70);
-  --graphite: oklch(0.29 0.018 74);
-  --shadow-sm: 0 12px 32px oklch(0.35 0.03 68 / 0.1);
-  --shadow-lg: 0 28px 80px oklch(0.34 0.028 68 / 0.16);
-  --radius-sm: 12px;
-  --radius-md: 18px;
-  --radius-lg: 26px;
-  --radius-xl: 34px;
+  --ink: #050200;
+  --ink-strong: #000000;
+  --ink-muted: #747472;
+  --ink-soft: #8b8a86;
+  --paper: #e8e7e3;
+  --paper-lift: #f5f4f1;
+  --surface: #e8e7e3;
+  --surface-soft: #efeee9;
+  --surface-deep: #dcdad4;
+  --line: rgb(5 2 0 / 0.2);
+  --line-strong: #050200;
+  --accent: #a06638;
+  --accent-soft: #dfc9b5;
+  --graphite: #050200;
+  --shadow-sm: none;
+  --shadow-lg: none;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
   --space-2xs: 4px;
   --space-xs: 8px;
   --space-sm: 12px;
@@ -29,8 +30,8 @@
   --space-xl: 32px;
   --space-2xl: 48px;
   --space-3xl: 64px;
-  --space-4xl: 96px;
-  font-family: "Noto Sans SC", ui-sans-serif, sans-serif;
+  --space-4xl: 80px;
+  font-family: "Inter", "Noto Sans SC", ui-sans-serif, sans-serif;
   color: var(--ink);
   background: var(--paper);
 }
@@ -48,9 +49,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 82% 6%, oklch(0.89 0.036 76 / 0.42), transparent 31rem),
-    linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 54%, var(--paper) 100%);
+  background: var(--paper);
 }
 
 body::before {
@@ -59,10 +58,12 @@ body::before {
   z-index: -1;
   pointer-events: none;
   content: "";
-  background: linear-gradient(90deg, oklch(0.88 0.02 78 / 0.42) 1px, transparent 1px);
-  background-size: min(24vw, 280px) 100%;
-  mask-image: linear-gradient(to bottom, transparent, black 16%, transparent 86%);
-  opacity: 0.32;
+  background:
+    linear-gradient(rgb(5 2 0 / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(5 2 0 / 0.045) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, black 0%, black 34%, transparent 86%);
+  opacity: 0.7;
 }
 
 a {
@@ -80,7 +81,7 @@ button {
 }
 
 .site-shell {
-  width: min(1120px, calc(100% - clamp(28px, 6vw, 96px)));
+  width: min(1150px, calc(100% - clamp(28px, 6vw, 96px)));
   margin: 0 auto;
 }
 
@@ -93,9 +94,9 @@ button {
   gap: var(--space-lg);
   align-items: center;
   margin: 0 0 var(--space-4xl);
-  padding: var(--space-lg) 0 var(--space-md);
-  border-bottom: 1px solid color-mix(in oklch, var(--line), transparent 20%);
-  background: color-mix(in oklch, var(--paper) 86%, transparent);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line-strong);
+  background: rgb(232 231 227 / 0.88);
   backdrop-filter: blur(18px);
 }
 
@@ -112,10 +113,10 @@ footer {
 
 .brand {
   gap: var(--space-sm);
-  font-family: "Bricolage Grotesque", "Noto Sans SC", sans-serif;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
   font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 800;
+  letter-spacing: -0.04em;
   min-width: 0;
 }
 
@@ -123,14 +124,14 @@ footer {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px oklch(0.32 0.02 68 / 0.12);
+  box-shadow: none;
 }
 
 .nav-links {
   justify-content: center;
-  gap: clamp(16px, 3vw, 40px);
+  gap: clamp(16px, 3vw, 38px);
   color: var(--ink-muted);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 600;
   min-width: 0;
 }
@@ -149,10 +150,10 @@ footer a:hover {
 .mobile-language-control {
   gap: var(--space-xs);
   padding: 4px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  border-radius: 0;
   color: var(--ink-soft);
-  background: color-mix(in oklch, var(--surface) 72%, transparent);
+  background: transparent;
 }
 
 .mobile-language-control {
@@ -169,7 +170,7 @@ footer a:hover {
 .mobile-language-control button {
   min-width: 34px;
   border: 0;
-  border-radius: 999px;
+  border-radius: 0;
   padding: 6px 9px;
   color: var(--ink-muted);
   background: transparent;
@@ -179,17 +180,17 @@ footer a:hover {
 
 .language-control button[data-state="on"],
 .mobile-language-control button[data-state="on"] {
-  color: var(--ink);
-  background: var(--surface-deep);
+  color: var(--paper);
+  background: var(--ink);
 }
 
 .hero-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
-  gap: clamp(42px, 7vw, 92px);
-  align-items: center;
+  grid-template-columns: minmax(0, 0.86fr) minmax(430px, 1.14fr);
+  gap: clamp(48px, 7vw, 96px);
+  align-items: end;
   min-width: 0;
-  padding-bottom: var(--space-4xl);
+  padding: 8px 0 var(--space-4xl);
 }
 
 .hero-copy,
@@ -202,11 +203,11 @@ footer a:hover {
 
 .eyebrow {
   margin: 0;
-  color: var(--accent);
-  font-family: "Bricolage Grotesque", "Noto Sans SC", sans-serif;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
+  color: var(--ink-muted);
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -222,23 +223,24 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Bricolage Grotesque", "Noto Sans SC", sans-serif;
+  font-family: "Inter", "Noto Sans SC", sans-serif;
   color: var(--ink);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.055em;
 }
 
 h1 {
-  max-width: 680px;
-  font-size: clamp(3rem, 5.4vw, 4.9rem);
-  line-height: 1;
+  max-width: 720px;
+  font-size: clamp(4rem, 7.4vw, 7.8rem);
+  font-weight: 800;
+  line-height: 0.9;
   text-wrap: balance;
 }
 
 :lang(zh-CN) h1 {
-  max-width: 8em;
-  font-size: clamp(3.25rem, 4.8vw, 4.45rem);
-  line-height: 1.06;
-  letter-spacing: -0.055em;
+  max-width: none;
+  font-size: clamp(4rem, 6vw, 5.85rem);
+  line-height: 0.96;
+  letter-spacing: -0.07em;
   text-wrap: auto;
 }
 
@@ -262,8 +264,8 @@ h3 {
 .local-card p {
   max-width: 66ch;
   color: var(--ink-muted);
-  font-size: clamp(1rem, 1.2vw, 1.13rem);
-  line-height: 1.78;
+  font-size: clamp(1rem, 1.14vw, 1.12rem);
+  line-height: 1.64;
 }
 
 .hero-actions {
@@ -278,45 +280,56 @@ h3 {
 
 .button {
   display: inline-flex;
-  min-height: 46px;
+  min-height: 44px;
   align-items: center;
   justify-content: center;
   gap: var(--space-xs);
   border: 1px solid transparent;
-  border-radius: 14px;
-  padding: 0 18px;
-  font-weight: 700;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  border-radius: 0;
+  padding: 0 20px;
+  font-weight: 800;
+  transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
 .button:hover {
-  transform: translateY(-1px);
+  transform: none;
 }
 
 .button.primary {
-  color: oklch(0.985 0.006 84);
-  background: var(--graphite);
-  box-shadow: 0 14px 34px oklch(0.25 0.018 70 / 0.2);
+  color: var(--paper);
+  background: var(--ink);
+  box-shadow: none;
 }
 
 .button.secondary {
   color: var(--ink);
-  border-color: var(--line-strong);
-  background: color-mix(in oklch, var(--surface) 74%, transparent);
+  border-color: var(--ink);
+  background: transparent;
+}
+
+.button.secondary:hover {
+  color: var(--paper);
+  background: var(--ink);
 }
 
 .release-strip {
   flex-wrap: wrap;
-  gap: var(--space-sm);
+  gap: 0;
+  width: fit-content;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
   color: var(--ink-soft);
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
 }
 
-.release-strip span + span::before {
-  content: "·";
-  margin-right: var(--space-sm);
-  color: var(--line-strong);
+.release-strip span {
+  padding: 8px 12px;
+}
+
+.release-strip span + span {
+  border-left: 1px solid var(--line-strong);
 }
 
 .hero-art {
@@ -329,15 +342,15 @@ h3 {
 .desk-label {
   max-width: 420px;
   color: var(--ink-muted);
-  font-size: 0.92rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .window-card {
   position: relative;
   overflow: hidden;
   min-width: 0;
-  border: 1px solid color-mix(in oklch, var(--line-strong), transparent 28%);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-xl);
   background: var(--surface);
   box-shadow: var(--shadow-lg);
@@ -350,18 +363,14 @@ h3 {
 }
 
 .quick-shot img {
-  clip-path: inset(12px 18px 12px 18px round 28px);
-  filter: drop-shadow(0 22px 48px oklch(0.34 0.028 68 / 0.14));
+  clip-path: inset(12px 18px 12px 18px round 0);
+  filter: none;
   transform: scale(1.035);
   transform-origin: center;
 }
 
 .window-card::after {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  content: "";
-  background: linear-gradient(180deg, transparent 68%, oklch(0.9 0.02 74 / 0.18));
+  content: none;
 }
 
 .floating-note {
@@ -372,16 +381,17 @@ h3 {
   width: fit-content;
   max-width: 100%;
   color: var(--ink-muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
 }
 
 .floating-note svg {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .section {
-  padding: var(--space-4xl) 0;
+  padding: 79px 0;
 }
 
 .split-section {
@@ -389,7 +399,7 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
   gap: clamp(40px, 7vw, 88px);
   align-items: start;
-  border-top: 1px solid color-mix(in oklch, var(--line), transparent 18%);
+  border-top: 1px solid var(--line-strong);
 }
 
 .section-heading {
@@ -403,22 +413,22 @@ h3 {
 
 .feature-stack {
   display: grid;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-strong);
 }
 
 .feature-row {
   display: grid;
   grid-template-columns: 56px 1fr;
   gap: var(--space-lg);
-  padding: var(--space-xl) 0;
-  border-bottom: 1px solid var(--line);
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .feature-index {
-  color: var(--accent);
-  font-family: "Bricolage Grotesque", "Noto Sans SC", sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
+  color: var(--ink-muted);
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
 }
 
 .feature-row p,
@@ -430,7 +440,7 @@ h3 {
 }
 
 .workflow-section {
-  border-top: 1px solid color-mix(in oklch, var(--line), transparent 18%);
+  border-top: 1px solid var(--line-strong);
 }
 
 .workflow-grid {
@@ -449,7 +459,7 @@ h3 {
 
 .workflow-list {
   display: grid;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-strong);
 }
 
 .workflow-list article {
@@ -457,15 +467,15 @@ h3 {
   grid-template-columns: 88px 1fr;
   gap: var(--space-lg);
   align-items: start;
-  padding: var(--space-lg) 0;
-  border-bottom: 1px solid var(--line);
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .workflow-list span {
-  color: var(--accent);
-  font-family: "Bricolage Grotesque", "Noto Sans SC", sans-serif;
-  font-size: 0.86rem;
-  font-weight: 700;
+  color: var(--ink-muted);
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
   grid-row: 1 / span 2;
 }
 
@@ -483,15 +493,15 @@ h3 {
   grid-template-columns: auto 1fr;
   gap: var(--space-lg);
   align-items: start;
-  padding: clamp(24px, 4vw, 42px);
-  border: 1px solid color-mix(in oklch, var(--line-strong), transparent 24%);
+  padding: 25px;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-xl);
-  background: color-mix(in oklch, var(--surface) 78%, var(--surface-soft));
+  background: transparent;
   box-shadow: var(--shadow-sm);
 }
 
 .local-card svg {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .local-card h2 {
@@ -513,6 +523,8 @@ h3 {
   align-items: center;
   gap: var(--space-xs);
   color: var(--ink-muted);
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: 0.82rem;
   font-weight: 600;
 }
 
@@ -521,7 +533,7 @@ h3 {
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
   gap: clamp(36px, 6vw, 72px);
   align-items: center;
-  border-top: 1px solid color-mix(in oklch, var(--line), transparent 18%);
+  border-top: 1px solid var(--line-strong);
 }
 
 .soft-note {
@@ -534,11 +546,11 @@ h3 {
   grid-template-columns: auto 1fr;
   gap: var(--space-md);
   align-items: center;
-  padding: clamp(18px, 3vw, 28px);
-  border: 1px solid color-mix(in oklch, var(--line-strong), transparent 20%);
+  padding: 25px;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-lg);
   color: var(--ink);
-  background: var(--surface);
+  background: transparent;
   box-shadow: var(--shadow-sm);
 }
 
@@ -551,8 +563,8 @@ h3 {
   width: 9px;
   height: 9px;
   border-radius: 999px;
-  background: var(--accent);
-  opacity: 0.72;
+  background: var(--ink);
+  opacity: 1;
 }
 
 .terminal-dots span:nth-child(2) {
@@ -565,7 +577,8 @@ h3 {
 
 code {
   color: var(--graphite);
-  font-size: clamp(1rem, 1.5vw, 1.28rem);
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-size: clamp(0.96rem, 1.32vw, 1.16rem);
   line-height: 1.5;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
@@ -576,17 +589,17 @@ code {
   grid-template-columns: minmax(260px, 0.7fr) minmax(340px, 1.3fr);
   gap: clamp(34px, 6vw, 72px);
   align-items: start;
-  border-top: 1px solid color-mix(in oklch, var(--line), transparent 18%);
+  border-top: 1px solid var(--line-strong);
 }
 
 .faq-list {
   display: grid;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line-strong);
 }
 
 .faq-item {
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .faq-list button {
@@ -627,16 +640,16 @@ code {
   justify-items: center;
   gap: var(--space-md);
   margin: var(--space-3xl) 0;
-  padding: clamp(34px, 7vw, 76px);
-  border: 1px solid color-mix(in oklch, var(--line-strong), transparent 24%);
+  padding: clamp(34px, 7vw, 72px);
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-xl);
   text-align: center;
-  background: color-mix(in oklch, var(--surface) 82%, var(--accent-soft));
+  background: var(--surface-soft);
   box-shadow: var(--shadow-sm);
 }
 
 .download-section svg {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .download-section p {

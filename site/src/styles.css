@@ -240,10 +240,10 @@ h1 {
 }
 
 :lang(zh-CN) h1 {
-  max-width: none;
-  font-size: clamp(3.55rem, 4.9vw, 4.95rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
+  max-width: 10em;
+  font-size: clamp(3.1rem, 4.1vw, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
   text-wrap: auto;
 }
 
@@ -353,17 +353,9 @@ h3 {
   box-shadow: var(--shadow-lg);
 }
 
-.window-card img,
-.quick-shot img {
+.window-card img {
   width: 100%;
   height: auto;
-}
-
-.quick-shot img {
-  clip-path: inset(12px 18px 12px 18px round 0);
-  filter: none;
-  transform: scale(1.035);
-  transform-origin: center;
 }
 
 .window-card::after {
@@ -424,20 +416,14 @@ h3 {
 
 .workflow-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 0.82fr) minmax(360px, 1.18fr);
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1.14fr);
   gap: clamp(36px, 6vw, 64px);
   align-items: start;
 }
 
-.quick-shot {
-  overflow: hidden;
-  min-width: 0;
-  border-radius: var(--radius-xl);
-  background: transparent;
-}
-
 .workflow-list {
   display: grid;
+  grid-column: 2;
   border-top: 1px solid var(--line-strong);
 }
 
@@ -540,6 +526,10 @@ code {
   text-align: center;
 }
 
+.download-section .button {
+  min-width: 168px;
+}
+
 footer {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -601,6 +591,10 @@ footer a {
 
   .hero-section {
     gap: var(--space-2xl);
+  }
+
+  .workflow-list {
+    grid-column: 1;
   }
 
   .window-card {

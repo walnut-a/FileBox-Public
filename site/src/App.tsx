@@ -53,8 +53,8 @@ const copy: Record<
     nav: ["功能", "工作流", "CLI", "下载"],
     langLabel: "语言",
     eyebrow: "FileBox for macOS",
-    heroTitle: "文件更近。",
-    heroLead: "常用目录、快捷窗口、文件动态和 Agent 路径查询，一个入口就够了。",
+    heroTitle: "常用目录入口。",
+    heroLead: "把桌面、下载、项目和文件动态放在一个本地入口里。",
     primaryCta: "下载 FileBox",
     secondaryCta: "查看 CLI 文档",
     latest: "最新版本 1.4.2",
@@ -112,8 +112,8 @@ const copy: Record<
     nav: ["Features", "Workflow", "CLI", "Download"],
     langLabel: "Language",
     eyebrow: "FileBox for macOS",
-    heroTitle: "Mac files, closer.",
-    heroLead: "Favorite folders, quick access, file activity, and Agent-ready paths in one small Mac utility.",
+    heroTitle: "Favorite folders, one place.",
+    heroLead: "Keep Desktop, Downloads, projects, and file activity in one local Mac utility.",
     primaryCta: "Download FileBox",
     secondaryCta: "Read CLI docs",
     latest: "Latest version 1.4.2",
@@ -310,9 +310,6 @@ export default function App() {
             <p>{text.workflowLead}</p>
           </div>
           <div className="workflow-grid">
-            <div className="quick-shot">
-              <img src="/images/filebox-quick-window-20260428.png" alt="FileBox quick panel" loading="lazy" />
-            </div>
             <div className="workflow-list">
               {text.workflow.map((item) => (
                 <article key={item.title}>
@@ -348,7 +345,6 @@ export default function App() {
           <p>{text.downloadLead}</p>
           <div className="hero-actions centered">
             <a className="button primary" href={downloadURL}>
-              <ArrowDownToLine aria-hidden="true" size={18} />
               {text.downloadButton}
             </a>
             <a className="button secondary" href={releaseURL}>

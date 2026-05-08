@@ -55,7 +55,7 @@ const copy: Record<
     eyebrow: "FileBox for macOS",
     heroTitle: "常用目录入口。",
     heroLead: "把桌面、下载、项目和文件动态放在一个本地入口里。",
-    primaryCta: "下载 FileBox",
+    primaryCta: "立即下载",
     secondaryCta: "查看 CLI 文档",
     latest: "最新版本 1.4.2",
     system: "macOS 13.0+",
@@ -104,7 +104,7 @@ const copy: Record<
     cliNote: "如果你只是自己查看文件动态，安装 App 内置 CLI 就够了。",
     downloadTitle: "把 FileBox 放到你的 Mac 上。",
     downloadLead: "下载最新版，放进 Applications 文件夹，然后配置常用目录。",
-    downloadButton: "下载 FileBox",
+    downloadButton: "立即下载",
     releaseLink: "查看历史版本",
     footer: "FileBox 是一个本地优先的 macOS 文件快捷访问工具。"
   },
@@ -114,7 +114,7 @@ const copy: Record<
     eyebrow: "FileBox for macOS",
     heroTitle: "Favorite folders, one place.",
     heroLead: "Keep Desktop, Downloads, projects, and file activity in one local Mac utility.",
-    primaryCta: "Download FileBox",
+    primaryCta: "Download",
     secondaryCta: "Read CLI docs",
     latest: "Latest version 1.4.2",
     system: "macOS 13.0+",
@@ -163,7 +163,7 @@ const copy: Record<
     cliNote: "If you only need terminal access, the built-in CLI is enough.",
     downloadTitle: "Put FileBox on your Mac.",
     downloadLead: "Download the latest release, drag it into Applications, and set up your folders.",
-    downloadButton: "Download FileBox",
+    downloadButton: "Download",
     releaseLink: "View release history",
     footer: "FileBox is a local-first macOS file access utility."
   }

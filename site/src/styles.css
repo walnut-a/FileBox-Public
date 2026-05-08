@@ -283,15 +283,17 @@ h3 {
 }
 
 .button {
-  display: inline-flex;
+  display: inline-grid;
+  grid-auto-flow: column;
+  place-items: center;
   min-height: 44px;
-  align-items: center;
-  justify-content: center;
   gap: var(--space-xs);
   border: 1px solid transparent;
   border-radius: 0;
   padding: 0 18px;
   font-weight: 600;
+  line-height: 1;
+  text-align: center;
   transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
@@ -527,7 +529,7 @@ code {
 }
 
 .download-section .button {
-  min-width: 168px;
+  min-width: 144px;
 }
 
 footer {

@@ -200,7 +200,7 @@ export default function App() {
         <a className="brand" href="#top" aria-label="FileBox home">
           <img
             className="brand-mark"
-            src="/images/filebox-app-icon-20260425.png"
+            src="/images/filebox-box-transparent-20260425.png"
             alt=""
             width="36"
             height="36"

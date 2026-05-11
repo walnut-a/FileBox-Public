@@ -283,9 +283,9 @@ h3 {
 }
 
 .button {
-  display: inline-grid;
-  grid-auto-flow: column;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 44px;
   gap: var(--space-xs);
   border: 1px solid transparent;
@@ -295,6 +295,10 @@ h3 {
   line-height: 1;
   text-align: center;
   transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.button svg {
+  flex: 0 0 auto;
 }
 
 .button:hover {
@@ -659,6 +663,17 @@ footer a {
 
   .button {
     width: 100%;
+  }
+
+  .release-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    text-align: center;
+  }
+
+  .release-strip span {
+    min-width: 0;
   }
 
   .hero-copy {

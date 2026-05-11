@@ -353,9 +353,9 @@ h3 {
   position: relative;
   overflow: hidden;
   min-width: 0;
-  border: 1px solid var(--line-strong);
+  border: 0;
   border-radius: var(--radius-xl);
-  background: var(--surface);
+  background: transparent;
   box-shadow: var(--shadow-lg);
 }
 

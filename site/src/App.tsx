@@ -1,7 +1,6 @@
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import {
   ArrowDownToLine,
-  Languages,
   Monitor,
   TerminalSquare
 } from "lucide-react";
@@ -15,6 +14,7 @@ type Feature = {
   body: string;
 };
 
+const currentVersion = "1.5.1";
 const downloadURL = "https://github.com/walnut-a/FileBox-Public/releases/latest";
 const cliDocsURL = "https://github.com/walnut-a/FileBox-Public/blob/main/docs/agent-cli-and-skill.md";
 const releaseURL = "https://github.com/walnut-a/FileBox-Public/releases";
@@ -53,12 +53,12 @@ const copy: Record<
     nav: ["功能", "工作流", "CLI", "下载"],
     langLabel: "语言",
     eyebrow: "FileBox for macOS",
-    heroTitle: "常用目录入口。",
-    heroLead: "把桌面、下载、项目和文件动态放在一个本地入口里。",
+    heroTitle: "少翻几层目录，快一点进入工作",
+    heroLead: "FileBox 把常用目录、快捷窗口和文件动态放在同一个地方。",
     primaryCta: "立即下载",
     secondaryCta: "查看 CLI 文档",
-    latest: "最新版本 1.4.2",
-    system: "macOS 13.0+",
+    latest: `最新版本 ${currentVersion}`,
+    system: "macOS 14.0+",
     screenshotAlt: "FileBox 主窗口截图",
     valueTitle: "为高频文件夹做得更快一点。",
     valueLead: "FileBox 不替代 Finder，只把每天都会打开的位置变得更近。",
@@ -102,8 +102,8 @@ const copy: Record<
     cliLead: "安装 App 后，可以在设置里安装 FileBox CLI。Agent Skill 会说明调用方式。",
     cliCommand: "npx filebox-agent-skill install",
     cliNote: "如果你只是自己查看文件动态，安装 App 内置 CLI 就够了。",
-    downloadTitle: "把 FileBox 放到你的 Mac 上。",
-    downloadLead: "下载最新版，放进 Applications 文件夹，然后配置常用目录。",
+    downloadTitle: "开启更快的文件访问",
+    downloadLead: "下载最新版，拖进 Applications 文件夹，然后配置常用目录。",
     downloadButton: "立即下载",
     releaseLink: "查看历史版本",
     footer: "FileBox 是一个本地优先的 macOS 文件快捷访问工具。"
@@ -112,12 +112,12 @@ const copy: Record<
     nav: ["Features", "Workflow", "CLI", "Download"],
     langLabel: "Language",
     eyebrow: "FileBox for macOS",
-    heroTitle: "Favorite folders, one place.",
-    heroLead: "Keep Desktop, Downloads, projects, and file activity in one local Mac utility.",
+    heroTitle: "Less folder hunting, faster work",
+    heroLead: "FileBox brings favorite folders, the quick panel, and file activity into one place.",
     primaryCta: "Download",
     secondaryCta: "Read CLI docs",
-    latest: "Latest version 1.4.2",
-    system: "macOS 13.0+",
+    latest: `Latest version ${currentVersion}`,
+    system: "macOS 14.0+",
     screenshotAlt: "FileBox main window screenshot",
     valueTitle: "A faster lane for the folders you use most.",
     valueLead: "FileBox does not replace Finder. It simply shortens the paths you touch every day.",
@@ -161,7 +161,7 @@ const copy: Record<
     cliLead: "After installing the app, enable the FileBox CLI in Settings. The Agent Skill explains how to call it.",
     cliCommand: "npx filebox-agent-skill install",
     cliNote: "If you only need terminal access, the built-in CLI is enough.",
-    downloadTitle: "Put FileBox on your Mac.",
+    downloadTitle: "Get faster file access",
     downloadLead: "Download the latest release, drag it into Applications, and set up your folders.",
     downloadButton: "Download",
     releaseLink: "View release history",
@@ -226,15 +226,14 @@ export default function App() {
             aria-label={text.langLabel}
           >
             <ToggleGroup.Item value="zh" aria-label="中文">
-              中
+              <span className="language-label language-label-zh">中</span>
             </ToggleGroup.Item>
             <ToggleGroup.Item value="en" aria-label="English">
-              EN
+              <span className="language-label">EN</span>
             </ToggleGroup.Item>
           </ToggleGroup.Root>
         </div>
         <div className="language-control" aria-label={text.langLabel}>
-          <Languages aria-hidden="true" size={16} />
           <ToggleGroup.Root
             type="single"
             value={locale}
@@ -246,10 +245,10 @@ export default function App() {
             aria-label={text.langLabel}
           >
             <ToggleGroup.Item value="zh" aria-label="中文">
-              中
+              <span className="language-label language-label-zh">中</span>
             </ToggleGroup.Item>
             <ToggleGroup.Item value="en" aria-label="English">
-              EN
+              <span className="language-label">EN</span>
             </ToggleGroup.Item>
           </ToggleGroup.Root>
         </div>
@@ -259,7 +258,15 @@ export default function App() {
         <section className="hero-section">
           <div className="hero-copy">
             <p className="eyebrow">{text.eyebrow}</p>
-            <h1>{text.heroTitle}</h1>
+            <h1>
+              {locale === "zh" ? (
+                <>
+                  少翻几层目录，<span className="hero-title-nowrap">快一点进入工作</span>
+                </>
+              ) : (
+                text.heroTitle
+              )}
+            </h1>
             <p className="hero-lead">{text.heroLead}</p>
             <div className="hero-actions">
               <a className="button primary" href={downloadURL}>

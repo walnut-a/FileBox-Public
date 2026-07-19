@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap");
 
 :root {
   color-scheme: light;
@@ -31,7 +31,10 @@
   --space-2xl: 48px;
   --space-3xl: 64px;
   --space-4xl: 72px;
-  font-family: "Inter", "Noto Sans SC", ui-sans-serif, sans-serif;
+  --font-body: "Alegreya Sans", "Noto Sans SC", ui-sans-serif, sans-serif;
+  --font-display: "Alegreya Sans", "Noto Sans SC", "PingFang SC", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", "Noto Sans SC", ui-monospace, monospace;
+  font-family: var(--font-body);
   color: var(--ink);
   background: var(--paper);
 }
@@ -112,10 +115,10 @@ footer {
 
 .brand {
   gap: var(--space-sm);
-  font-family: "Inter", "Noto Sans SC", sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;
   min-width: 0;
 }
 
@@ -147,12 +150,14 @@ footer a:hover {
 
 .language-control,
 .mobile-language-control {
-  gap: var(--space-xs);
-  padding: 4px;
-  border: 1px solid var(--line-strong);
+  gap: 0;
+  min-height: 28px;
+  padding: 2px;
+  border: 1px solid var(--line);
   border-radius: 0;
   color: var(--ink-soft);
   background: transparent;
+  line-height: 1;
 }
 
 .language-control {
@@ -166,25 +171,41 @@ footer a:hover {
 .language-control [role="group"],
 .mobile-language-control [role="group"] {
   display: inline-flex;
-  gap: var(--space-2xs);
+  align-items: center;
+  gap: 1px;
 }
 
 .language-control button,
 .mobile-language-control button {
-  min-width: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 24px;
   border: 0;
   border-radius: 0;
-  padding: 6px 9px;
+  padding: 0 7px;
   color: var(--ink-muted);
   background: transparent;
   cursor: pointer;
+  font-size: 0.78rem;
   font-weight: 600;
+  line-height: 1;
 }
 
 .language-control button[data-state="on"],
 .mobile-language-control button[data-state="on"] {
   color: var(--paper-lift);
   background: var(--ink);
+}
+
+.language-label {
+  display: block;
+  line-height: 1;
+}
+
+.language-label-zh {
+  transform: translateY(2px);
 }
 
 .hero-section {
@@ -207,7 +228,7 @@ footer a:hover {
 .eyebrow {
   margin: 0;
   color: var(--ink-muted);
-  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -226,39 +247,43 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Inter", "Noto Sans SC", sans-serif;
+  font-family: var(--font-display);
   color: var(--ink);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 
 h1 {
   max-width: 680px;
   font-size: clamp(3.8rem, 6.6vw, 6.8rem);
-  font-weight: 600;
-  line-height: 0.94;
+  font-weight: 700;
+  line-height: 0.98;
   text-wrap: balance;
 }
 
 :lang(zh-CN) h1 {
-  max-width: 10em;
-  font-size: clamp(3.1rem, 4.1vw, 3.85rem);
+  max-width: min(100%, 15em);
+  font-size: clamp(3.2rem, 4.28vw, 4rem);
   line-height: 1.08;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
   text-wrap: auto;
+}
+
+.hero-title-nowrap {
+  white-space: nowrap;
 }
 
 h2 {
   max-width: 760px;
   font-size: clamp(1.9rem, 3vw, 3rem);
-  font-weight: 600;
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 1.12;
   text-wrap: balance;
 }
 
 h3 {
   font-size: clamp(1.08rem, 1.34vw, 1.28rem);
-  font-weight: 600;
-  line-height: 1.18;
+  font-weight: 700;
+  line-height: 1.22;
 }
 
 .hero-lead,
@@ -329,7 +354,7 @@ h3 {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   color: var(--ink-soft);
-  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 500;
 }
@@ -404,7 +429,7 @@ h3 {
 
 .feature-index {
   color: var(--ink-muted);
-  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 500;
 }
@@ -449,7 +474,7 @@ h3 {
 
 .workflow-list span {
   color: var(--ink-muted);
-  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 500;
   grid-row: 1 / span 2;
@@ -509,7 +534,7 @@ h3 {
 
 code {
   color: var(--graphite);
-  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+  font-family: var(--font-mono);
   font-size: clamp(0.96rem, 1.32vw, 1.16rem);
   line-height: 1.5;
   overflow-wrap: anywhere;

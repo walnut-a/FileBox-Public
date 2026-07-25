@@ -14,7 +14,7 @@ type Feature = {
   body: string;
 };
 
-const currentVersion = "1.5.3";
+const currentVersion = "1.5.4";
 const downloadURL = "https://github.com/walnut-a/FileBox-Public/releases/latest";
 const cliDocsURL = "https://github.com/walnut-a/FileBox-Public/blob/main/docs/agent-cli-and-skill.md";
 const releaseURL = "https://github.com/walnut-a/FileBox-Public/releases";

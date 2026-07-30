@@ -2,7 +2,9 @@
 
 FileBox 是一个 macOS 本地文件快捷访问工具，适合快速打开常用目录、整理下载文件、使用快捷窗口处理临时文件，并通过文件动态关注重点目录里的变化。
 
-这个公开仓库用于发布 FileBox 安装包、维护公开文档、托管 Agent Skill 和 npm 安装器。FileBox App 主体源码不在这个仓库中。
+这个公开仓库用于发布 FileBox 安装包、维护公开官网、公开文档、Agent Skill 和 npm 安装器。FileBox App 主体源码不在这个仓库中。
+
+官网地址：[getfilebox.app](https://getfilebox.app)
 
 ## 下载与安装
 
@@ -19,6 +21,7 @@ FileBox 完全在本地运行。它提供快捷访问、文件动态和路径查
 | 内容 | 说明 |
 | --- | --- |
 | [Releases](https://github.com/walnut-a/FileBox-Public/releases) | FileBox 正式安装包 |
+| [`site`](./site) | getfilebox.app 官网源码 |
 | [`docs/agent-cli-and-skill.md`](./docs/agent-cli-and-skill.md) | FileBox CLI 与 Agent Skill 使用说明 |
 | [`skills/filebox-activity`](./skills/filebox-activity) | 面向 Agent 的 FileBox Activity Skill |
 | [`bin/filebox-agent-skill.js`](./bin/filebox-agent-skill.js) | Skill 安装命令入口 |
@@ -95,6 +98,12 @@ npm run check:release
 - npm 发布包是否误带 token 或私有内容
 
 本地配置 `.githooks/pre-push` 后，执行 `git push` 前会自动运行同一套检查。
+
+官网本地构建：
+
+```bash
+npm run site:build
+```
 
 ## 许可说明
 

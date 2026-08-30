@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.9",
-  "build": "20260821.1411",
-  "publishedAt": "2026-08-21T06:19:07Z",
+  "version": "1.5.10",
+  "build": "20260831.0204",
+  "publishedAt": "2026-08-30T18:17:07Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.9",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.10",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.9/FileBox_v1.5.9_b20260821.1411.dmg",
-    "size": 5645535,
-    "sha256": "65c22d995310cc252f5dbc480393521a7f5c7111de11c9250e6f1f7e633832a4"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.10/FileBox_v1.5.10_b20260831.0204.dmg",
+    "size": 5698833,
+    "sha256": "fd26e3d618879ed8c68d95f6898b877d62fdbe3f8ca91556b0dec4f799f11ba8"
   },
   "summary": {
     "zh-Hans": [
-      "优化文件时间排序语义，优先使用文件加入当前目录的时间",
-      "扩大文件动态范围后立即载入已经保留的历史内容",
-      "修复快速切换显示范围时旧查询结果可能覆盖新范围的问题"
+      "新增主窗口设置入口和关于页面的版本更新红点提醒",
+      "支持手动检查稳定版更新并展示下载入口",
+      "修复主窗口顶部双击放大，同时保持快捷窗口原有样式和行为"
     ],
     "en": [
-      "Improved file ordering to prioritize when files entered the current folder",
-      "Loads retained history immediately when expanding the activity range",
-      "Fixed stale results overriding a newly selected activity range"
+      "Added update indicators to Settings and the About page in the main window",
+      "Added manual stable update checks with a direct download link",
+      "Restored double-click zoom in the main window while keeping the quick panel unchanged"
     ]
   }
 }

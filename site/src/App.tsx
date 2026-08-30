@@ -287,7 +287,13 @@ export default function App() {
 
           <div className="hero-art" aria-label={text.screenshotAlt}>
             <div className="window-card">
-              <img src="/images/filebox-main-window-hero-20260509.png" alt={text.screenshotAlt} fetchPriority="high" />
+              <img
+                src="/images/filebox-main-window-hero-20260831.png"
+                alt={text.screenshotAlt}
+                width="1282"
+                height="986"
+                fetchPriority="high"
+              />
             </div>
           </div>
         </section>

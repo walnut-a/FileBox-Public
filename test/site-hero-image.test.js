@@ -18,9 +18,12 @@ test("website hero uses the latest screenshot without cropping it on mobile", ()
   const appSource = fs.readFileSync(appSourcePath, "utf8");
   const styles = fs.readFileSync(stylesPath, "utf8");
   const mobileStyles = styles.slice(styles.indexOf("@media (max-width: 620px)"));
+  const windowCardStyles = styles.match(/\.window-card\s*{[^}]*}/s)?.[0] ?? "";
 
   assert.match(appSource, /filebox-main-window-hero-20260831\.png/);
   assert.ok(fs.existsSync(heroImagePath));
+  assert.match(windowCardStyles, /overflow:\s*hidden;/);
+  assert.match(windowCardStyles, /border-radius:\s*4%\s*\/\s*5%;/);
   assert.match(mobileStyles, /\.window-card\s*{[^}]*aspect-ratio:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*height:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*object-fit:\s*contain;/s);

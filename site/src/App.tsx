@@ -5,6 +5,7 @@ import {
   TerminalSquare
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import stableRelease from "./data/stable-release.json";
 
 type Locale = "zh" | "en";
 
@@ -14,7 +15,7 @@ type Feature = {
   body: string;
 };
 
-const currentVersion = "1.5.6";
+const currentVersion = stableRelease.version;
 const downloadURL = "https://github.com/walnut-a/FileBox-Public/releases/latest";
 const cliDocsURL = "https://github.com/walnut-a/FileBox-Public/blob/main/docs/agent-cli-and-skill.md";
 const releaseURL = "https://github.com/walnut-a/FileBox-Public/releases";

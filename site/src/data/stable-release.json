@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "1.5.9",
+  "build": "20260821.1411",
+  "publishedAt": "2026-08-21T06:19:07Z",
+  "minimumSystemVersion": "14.0",
+  "downloadPageURL": "https://getfilebox.app/#download",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.9",
+  "asset": {
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.9/FileBox_v1.5.9_b20260821.1411.dmg",
+    "size": 5645535,
+    "sha256": "65c22d995310cc252f5dbc480393521a7f5c7111de11c9250e6f1f7e633832a4"
+  },
+  "summary": {
+    "zh-Hans": [
+      "优化文件时间排序语义，优先使用文件加入当前目录的时间",
+      "扩大文件动态范围后立即载入已经保留的历史内容",
+      "修复快速切换显示范围时旧查询结果可能覆盖新范围的问题"
+    ],
+    "en": [
+      "Improved file ordering to prioritize when files entered the current folder",
+      "Loads retained history immediately when expanding the activity range",
+      "Fixed stale results overriding a newly selected activity range"
+    ]
+  }
+}

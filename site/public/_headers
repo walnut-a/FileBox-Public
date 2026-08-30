@@ -1,0 +1,3 @@
+/updates/stable.json
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/json; charset=utf-8

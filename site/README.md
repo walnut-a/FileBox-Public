@@ -17,6 +17,36 @@ npm run build
 
 Cloudflare Pages 输出目录为 `dist`，配置见 [`wrangler.toml`](./wrangler.toml)。
 
+## 稳定版更新清单
+
+[`src/data/stable-release.json`](./src/data/stable-release.json) 是官网展示版本和 FileBox 客户端更新检查的唯一版本源。每次正式发版后，根据已经验证的 GitHub Release 和 DMG 更新这份文件，至少核对：
+
+- `version`、`build` 和最低系统版本
+- Release、下载页和 DMG 地址
+- DMG 字节大小和 SHA-256
+- 中英文更新摘要
+
+`npm run build` 会把它原样复制到：
+
+```text
+dist/updates/stable.json
+```
+
+Cloudflare Pages 通过 [`public/_headers`](./public/_headers) 为这个地址设置 JSON 类型和重新验证缓存策略。部署前执行：
+
+```bash
+npm test
+npm run build
+jq . dist/updates/stable.json
+```
+
+部署后验证生产地址返回 JSON，而不是单页应用 fallback：
+
+```bash
+curl -fsSI https://getfilebox.app/updates/stable.json
+curl -fsS https://getfilebox.app/updates/stable.json | jq .
+```
+
 ## Cloudflare 部署
 
 Pages 项目名为 `getfilebox-app`，生产分支为 `main`。

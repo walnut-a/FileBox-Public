@@ -24,6 +24,7 @@ test("website hero uses the latest screenshot without cropping it on mobile", ()
   assert.ok(fs.existsSync(heroImagePath));
   assert.match(windowCardStyles, /overflow:\s*hidden;/);
   assert.match(windowCardStyles, /border-radius:\s*4%\s*\/\s*5%;/);
+  assert.match(windowCardStyles, /clip-path:\s*inset\(1px round 4%\s*\/\s*5%\);/);
   assert.match(mobileStyles, /\.window-card\s*{[^}]*aspect-ratio:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*height:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*object-fit:\s*contain;/s);

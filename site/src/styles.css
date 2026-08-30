@@ -380,6 +380,7 @@ h3 {
   min-width: 0;
   border: 0;
   border-radius: 4% / 5%;
+  clip-path: inset(1px round 4% / 5%);
   background: transparent;
   box-shadow: var(--shadow-lg);
 }

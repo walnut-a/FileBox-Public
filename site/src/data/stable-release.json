@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.10",
-  "build": "20260831.0204",
-  "publishedAt": "2026-08-30T18:17:07Z",
+  "version": "1.5.11",
+  "build": "20260831.1333",
+  "publishedAt": "2026-08-31T05:42:19Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.10",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.11",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.10/FileBox_v1.5.10_b20260831.0204.dmg",
-    "size": 5698833,
-    "sha256": "fd26e3d618879ed8c68d95f6898b877d62fdbe3f8ca91556b0dec4f799f11ba8"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.11/FileBox_v1.5.11_b20260831.1333.dmg",
+    "size": 5700823,
+    "sha256": "dc9f70dc3fee5abc03de330ef0432a0a187f9aad0b35713c11598e628090940c"
   },
   "summary": {
     "zh-Hans": [
-      "新增主窗口设置入口和关于页面的版本更新红点提醒",
-      "支持手动检查稳定版更新并展示下载入口",
-      "修复主窗口顶部双击放大，同时保持快捷窗口原有样式和行为"
+      "支持再次点击同一文件的快速预览关闭 Quick Look",
+      "关闭设置后自动清理无更新和检查失败等临时结果",
+      "精简已是最新版本的结果展示，同时保留需要处理的新版本信息"
     ],
     "en": [
-      "Added update indicators to Settings and the About page in the main window",
-      "Added manual stable update checks with a direct download link",
-      "Restored double-click zoom in the main window while keeping the quick panel unchanged"
+      "Click the same file's Quick Look action again to close its preview",
+      "Clear transient up-to-date and failed check results when Settings closes",
+      "Simplify up-to-date feedback while retaining updates that still need attention"
     ]
   }
 }

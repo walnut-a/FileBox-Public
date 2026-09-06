@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.11",
-  "build": "20260831.1333",
-  "publishedAt": "2026-08-31T05:42:19Z",
+  "version": "1.5.12",
+  "build": "20260906.1341",
+  "publishedAt": "2026-09-06T07:05:35Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.11",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.12",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.11/FileBox_v1.5.11_b20260831.1333.dmg",
-    "size": 5700823,
-    "sha256": "dc9f70dc3fee5abc03de330ef0432a0a187f9aad0b35713c11598e628090940c"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.12/FileBox_v1.5.12_b20260906.1341.dmg",
+    "size": 6085905,
+    "sha256": "e96ad91907a6f7258fc125627af16058dd0fcd905d2792c2f24ce2dbb161aa9d"
   },
   "summary": {
     "zh-Hans": [
-      "支持再次点击同一文件的快速预览关闭 Quick Look",
-      "关闭设置后自动清理无更新和检查失败等临时结果",
-      "精简已是最新版本的结果展示，同时保留需要处理的新版本信息"
+      "自动发现 Git 工作区并记录关注文件变化，保留与所属项目的关联",
+      "支持后缀单选筛选，直接查看工作区内发生变化的文件",
+      "修复筛选栏加载空白和详情折叠残留，新增动态自动刷新"
     ],
     "en": [
-      "Click the same file's Quick Look action again to close its preview",
-      "Clear transient up-to-date and failed check results when Settings closes",
-      "Simplify up-to-date feedback while retaining updates that still need attention"
+      "Automatically discover Git worktrees and track focused files within their parent projects",
+      "Filter by one watched extension and view changed files directly",
+      "Fix blank filters and leftover collapsed details, with automatic activity refresh"
     ]
   }
 }

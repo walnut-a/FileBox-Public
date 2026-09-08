@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.13",
-  "build": "20260907.1920",
-  "publishedAt": "2026-09-07T11:28:05Z",
+  "version": "1.5.14",
+  "build": "20260909.0316",
+  "publishedAt": "2026-09-08T19:22:22Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.13",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.14",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.13/FileBox_v1.5.13_b20260907.1920.dmg",
-    "size": 6071623,
-    "sha256": "f95e76c5310e124f84b6026a7e4bc59509114814a192a6f9b5b5d44696f7be6d"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.14/FileBox_v1.5.14_b20260909.0316.dmg",
+    "size": 6072978,
+    "sha256": "1ea10337a641642bb60f1f9611266c2148aaf257cc752c77b974b1bb5247f71e"
   },
   "summary": {
     "zh-Hans": [
-      "重新整理设置菜单，目录管理与文件动态配置更清晰",
-      "快捷窗口主操作可配置，默认复制文件路径",
-      "普通目录上限扩大至 50 个，统一名额规则与界面样式"
+      "主窗口和快捷窗口的文件操作统一在悬停时显示",
+      "主窗口恢复快速预览、Finder 定位和复制路径等完整快捷操作",
+      "快捷窗口继续使用可配置主操作和更多菜单"
     ],
     "en": [
-      "Reorganized settings make folders and file activity easier to configure",
-      "Choose the quick panel primary action, with Copy File Path as the default",
-      "Manage up to 50 regular folders with consistent limits and layouts"
+      "File actions now appear consistently on hover in both windows",
+      "The main window restores the full set of quick actions",
+      "The quick panel keeps its configurable primary action and compact menu"
     ]
   }
 }

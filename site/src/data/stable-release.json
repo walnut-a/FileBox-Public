@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.14",
-  "build": "20260909.0316",
-  "publishedAt": "2026-09-08T19:22:22Z",
+  "version": "1.5.15",
+  "build": "20260914.1430",
+  "publishedAt": "2026-09-14T06:35:33Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.14",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.15",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.14/FileBox_v1.5.14_b20260909.0316.dmg",
-    "size": 6072978,
-    "sha256": "1ea10337a641642bb60f1f9611266c2148aaf257cc752c77b974b1bb5247f71e"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.15/FileBox_v1.5.15_b20260914.1430.dmg",
+    "size": 6181386,
+    "sha256": "6498f4059d6428d672839e8dfeeba436d98c439df34148b96fc1af6055e24340"
   },
   "summary": {
     "zh-Hans": [
-      "主窗口和快捷窗口的文件操作统一在悬停时显示",
-      "主窗口恢复快速预览、Finder 定位和复制路径等完整快捷操作",
-      "快捷窗口继续使用可配置主操作和更多菜单"
+      "新增按文件格式自动移动或复制文件的文件夹同步",
+      "支持分别管理文件夹同步总开关和单个同步任务",
+      "统一状态栏入口、设置页面与任务执行反馈"
     ],
     "en": [
-      "File actions now appear consistently on hover in both windows",
-      "The main window restores the full set of quick actions",
-      "The quick panel keeps its configurable primary action and compact menu"
+      "Added folder sync to automatically move or copy files by format",
+      "Manage folder sync globally and enable or disable individual tasks",
+      "Unified the menu bar entry, settings experience, and execution feedback"
     ]
   }
 }

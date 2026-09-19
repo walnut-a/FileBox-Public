@@ -10,7 +10,7 @@ FileBox 是一个 macOS 本地文件快捷访问工具，适合快速打开常�
 
 **下载软件**：[前往 Releases](https://github.com/walnut-a/FileBox-Public/releases) 下载最新版本。
 
-**系统要求**：macOS 13.0+，支持 Apple Silicon 与 Intel Mac。
+**系统要求**：当前安装包适用于 macOS 14.0+ 的 Apple Silicon Mac。
 
 **安装方法**：打开 DMG 文件后，将 FileBox 拖入 Applications 文件夹。
 

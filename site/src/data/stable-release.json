@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.16",
-  "build": "20260919.1454",
-  "publishedAt": "2026-09-19T07:13:36Z",
+  "version": "1.5.17",
+  "build": "20260920.0217",
+  "publishedAt": "2026-09-19T18:49:13Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.16",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.17",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.16/FileBox_v1.5.16_b20260919.1454.dmg",
-    "size": 6079191,
-    "sha256": "981f671d2e4f523b37b54194f017ff3537fa4e1273477b1750e4a1e700a202dc"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.17/FileBox_v1.5.17_b20260920.0217.dmg",
+    "size": 6186458,
+    "sha256": "e2cbee2220396891ab3227eedc77a17ffea1c00c27239c3e3f45f422e728764d"
   },
   "summary": {
     "zh-Hans": [
-      "修复主窗口、快捷窗口和设置页未跟随系统深色模式的问题",
-      "改善深色模式下图标、文字和选中状态的可见性",
-      "支持运行中实时切换深浅外观，并保留原有浅色配色"
+      "修复文件动态在不同日期之间出现大块空白的问题",
+      "修复鼠标快速经过或滚动列表时的多项悬停高亮残留",
+      "加深侧栏悬停底色，让悬停和选中状态更容易区分"
     ],
     "en": [
-      "Fixed system dark mode support in the main window, quick panel, and settings",
-      "Improved icon, text, and selection visibility in dark mode",
-      "Appearance updates immediately when the system theme changes, preserving the existing light palette"
+      "Fixed large gaps between date groups in file activity",
+      "Fixed lingering hover highlights when moving across items or scrolling lists",
+      "Made sidebar hover feedback clearer and distinct from the selected state"
     ]
   }
 }

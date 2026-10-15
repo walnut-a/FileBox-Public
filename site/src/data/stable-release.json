@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.17",
-  "build": "20260920.0217",
-  "publishedAt": "2026-09-19T18:49:13Z",
+  "version": "1.5.18",
+  "build": "20261016.0019",
+  "publishedAt": "2026-10-15T16:32:58Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.17",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.18",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.17/FileBox_v1.5.17_b20260920.0217.dmg",
-    "size": 6186458,
-    "sha256": "e2cbee2220396891ab3227eedc77a17ffea1c00c27239c3e3f45f422e728764d"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.18/FileBox_v1.5.18_b20261016.0019.dmg",
+    "size": 6167987,
+    "sha256": "f5304e3727a901bdf18c4b15fb48b9dde81c8276fdbf5d1edfdda9e16a1f08be"
   },
   "summary": {
     "zh-Hans": [
-      "修复文件动态在不同日期之间出现大块空白的问题",
-      "修复鼠标快速经过或滚动列表时的多项悬停高亮残留",
-      "加深侧栏悬停底色，让悬停和选中状态更容易区分"
+      "位置只保留鼠标附近和固定位置，始终在鼠标所在屏幕打开",
+      "固定位置记住上次拖动的位置，重启后继续保留",
+      "跨屏时自动调整位置，并限制在屏幕可见范围内"
     ],
     "en": [
-      "Fixed large gaps between date groups in file activity",
-      "Fixed lingering hover highlights when moving across items or scrolling lists",
-      "Made sidebar hover feedback clearer and distinct from the selected state"
+      "Choose Near Mouse or Fixed Position, always on the screen containing the pointer",
+      "Fixed Position remembers where you last moved the panel, even after restarting",
+      "Saved positions adapt across displays and stay within the visible screen area"
     ]
   }
 }

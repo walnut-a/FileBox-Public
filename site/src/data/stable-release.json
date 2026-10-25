@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.18",
-  "build": "20261016.0019",
-  "publishedAt": "2026-10-15T16:32:58Z",
+  "version": "1.5.19",
+  "build": "20261026.0008",
+  "publishedAt": "2026-10-25T16:15:50Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.18",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.19",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.18/FileBox_v1.5.18_b20261016.0019.dmg",
-    "size": 6167987,
-    "sha256": "f5304e3727a901bdf18c4b15fb48b9dde81c8276fdbf5d1edfdda9e16a1f08be"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.19/FileBox_v1.5.19_b20261026.0008.dmg",
+    "size": 6176387,
+    "sha256": "28c0657d07c1d27c22036e561adc0432ecca68b3dbaddff28f8c137e15d53834"
   },
   "summary": {
     "zh-Hans": [
-      "位置只保留鼠标附近和固定位置，始终在鼠标所在屏幕打开",
-      "固定位置记住上次拖动的位置，重启后继续保留",
-      "跨屏时自动调整位置，并限制在屏幕可见范围内"
+      "快捷窗口支持在 360–720pt 范围内调整宽度，并记住尺寸",
+      "长目录名称不再挤出侧栏和工具栏，设置窗口会进入请求的页面",
+      "修复设置和快捷窗口首次打开或系统缩放后的窗口按钮错位"
     ],
     "en": [
-      "Choose Near Mouse or Fixed Position, always on the screen containing the pointer",
-      "Fixed Position remembers where you last moved the panel, even after restarting",
-      "Saved positions adapt across displays and stay within the visible screen area"
+      "Resize the quick window from 360 to 720 pt and keep your preferred dimensions",
+      "Long folder names fit the header, and Settings opens the requested pane",
+      "Window controls stay aligned when Settings and the quick window first open or zoom"
     ]
   }
 }

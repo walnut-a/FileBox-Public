@@ -2,26 +2,26 @@
   "schemaVersion": 1,
   "channel": "stable",
   "version": "1.5.19",
-  "build": "20261026.0008",
-  "publishedAt": "2026-10-25T16:15:50Z",
+  "build": "20261026.0154",
+  "publishedAt": "2026-10-26T02:35:44Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
   "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.19",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.19/FileBox_v1.5.19_b20261026.0008.dmg",
-    "size": 6176387,
-    "sha256": "28c0657d07c1d27c22036e561adc0432ecca68b3dbaddff28f8c137e15d53834"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.19/FileBox_v1.5.19_b20261026.0154.dmg",
+    "size": 6174775,
+    "sha256": "c2efe30d019a9561b0f68923ff39151dcd4aca00f0c8a451df9d61916578bd3c"
   },
   "summary": {
     "zh-Hans": [
       "快捷窗口支持在 360–720pt 范围内调整宽度，并记住尺寸",
       "长目录名称不再挤出侧栏和工具栏，设置窗口会进入请求的页面",
-      "修复设置和快捷窗口首次打开或系统缩放后的窗口按钮错位"
+      "修复主窗口、快捷窗口和设置窗口调整尺寸时红绿灯跳动"
     ],
     "en": [
       "Resize the quick window from 360 to 720 pt and keep your preferred dimensions",
       "Long folder names fit the header, and Settings opens the requested pane",
-      "Window controls stay aligned when Settings and the quick window first open or zoom"
+      "Window controls stay aligned while resizing the main window, quick window and Settings"
     ]
   }
 }

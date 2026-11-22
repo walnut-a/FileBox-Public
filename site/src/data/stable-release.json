@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.20",
-  "build": "20261122.0226",
-  "publishedAt": "2026-11-21T18:53:58Z",
+  "version": "1.5.21",
+  "build": "20261122.1935",
+  "publishedAt": "2026-11-22T11:40:00Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.20",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.21",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.20/FileBox_v1.5.20_b20261122.0226.dmg",
-    "size": 7291015,
-    "sha256": "c6af96034c705c84656d9bcb9f47807978d4fa6526d5e8bab5f07716439b1d7e"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.21/FileBox_v1.5.21_b20261122.1935.dmg",
+    "size": 7534733,
+    "sha256": "caea76dc61bb7ec95bd7284a4edb46f7bd292f0695a8a626caeab347ad7937ce"
   },
   "summary": {
     "zh-Hans": [
-      "在文件动态里按格式跨目录浏览，STEP 模型合并显示 .step 和 .stp 文件",
-      "主窗口、快捷窗口和设置页换上纸面外观，关于页的纸箱可以点开",
-      "目录暂时无法读取时，文件动态会在后台重试，并提示需要重新授权的目录"
+      "快捷窗口支持全键盘流（Tab 切目录、Space 预览、回车打开）、新动态一键直达，并在设置中提供自动定位与自动置顶开关",
+      "支持文件动态冻结与原位返回、worktree 标识、菜单栏拖拽入中转、7 天闲置中转清理及 Ghostty 等终端自动识别",
+      "全面优化主窗口/快捷窗口列表流畅度与 SQLite 索引连接复用、语句缓存及目录快照内存缓存"
     ],
     "en": [
-      "Browse recent activity by format across folders, with .step and .stp files grouped as STEP models",
-      "The main window, quick window and Settings have a paper-inspired look. Click the box in About for a surprise",
-      "Recent activity retries temporarily unavailable folders and flags folders that need access again"
+      "Keyboard-first Quick Panel with Tab switching, Space Quick Look, one-click fresh activity jump, and opt-in auto-focus & auto-pin settings",
+      "Added timeline freeze & scroll restore, worktree badges, menu bar drag-to-Transit, stale Transit cleanup, and automatic terminal detection including Ghostty",
+      "Improved list rendering smoothness and SQLite indexing throughput with persistent connection reuse, prepared statement caching, and in-memory directory snapshots"
     ]
   }
 }

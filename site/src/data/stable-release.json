@@ -1,27 +1,23 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.21",
-  "build": "20261122.1935",
-  "publishedAt": "2026-11-22T11:40:00Z",
+  "version": "1.5.22",
+  "build": "20261122.2130",
+  "publishedAt": "2026-11-22T13:35:40Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.21",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.22",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.21/FileBox_v1.5.21_b20261122.1935.dmg",
-    "size": 7534733,
-    "sha256": "caea76dc61bb7ec95bd7284a4edb46f7bd292f0695a8a626caeab347ad7937ce"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.22/FileBox_v1.5.22_b20261122.2130.dmg",
+    "size": 7533929,
+    "sha256": "0a65cd0e065ffc48e70557d49b7e1d03432012124c14bdb06e1c95b05ebdf1da"
   },
   "summary": {
     "zh-Hans": [
-      "快捷窗口支持全键盘流（Tab 切目录、Space 预览、回车打开）、新动态一键直达，并在设置中提供自动定位与自动置顶开关",
-      "支持文件动态冻结与原位返回、worktree 标识、菜单栏拖拽入中转、7 天闲置中转清理及 Ghostty 等终端自动识别",
-      "全面优化主窗口/快捷窗口列表流畅度与 SQLite 索引连接复用、语句缓存及目录快照内存缓存"
+      "未钉住的快捷窗口现在能在其他应用前方打开。窗口被遮挡时，再按快捷键即可将它带回前台。"
     ],
     "en": [
-      "Keyboard-first Quick Panel with Tab switching, Space Quick Look, one-click fresh activity jump, and opt-in auto-focus & auto-pin settings",
-      "Added timeline freeze & scroll restore, worktree badges, menu bar drag-to-Transit, stale Transit cleanup, and automatic terminal detection including Ghostty",
-      "Improved list rendering smoothness and SQLite indexing throughput with persistent connection reuse, prepared statement caching, and in-memory directory snapshots"
+      "The unpinned Quick Panel now opens in front of other apps. If another window covers it, press the shortcut again to bring it back to the front."
     ]
   }
 }

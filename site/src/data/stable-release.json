@@ -1,23 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.22",
-  "build": "20261122.2130",
-  "publishedAt": "2026-11-22T13:35:40Z",
+  "version": "1.5.23",
+  "build": "20261122.2310",
+  "publishedAt": "2026-11-22T15:16:34Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.22",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.23",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.22/FileBox_v1.5.22_b20261122.2130.dmg",
-    "size": 7533929,
-    "sha256": "0a65cd0e065ffc48e70557d49b7e1d03432012124c14bdb06e1c95b05ebdf1da"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.23/FileBox_v1.5.23_b20261122.2310.dmg",
+    "size": 7535647,
+    "sha256": "0db46d0a58633592b59d97a4929ffac503e5fa52ebf2e555cc6debca27e8cae2"
   },
   "summary": {
     "zh-Hans": [
-      "未钉住的快捷窗口现在能在其他应用前方打开。窗口被遮挡时，再按快捷键即可将它带回前台。"
+      "快捷窗口恢复默认置顶，可用顶部图钉切换；通用设置中移除了重复开关。",
+      "自动定位到文件动态后会保留最新文件的选中状态。「新动态」提示会在约 5 分钟后自动消失。",
+      "更改监听目录时，冻结的文件动态时间线会恢复刷新。"
     ],
     "en": [
-      "The unpinned Quick Panel now opens in front of other apps. If another window covers it, press the shortcut again to bring it back to the front."
+      "The Quick Panel stays on top by default again. Use its pin button to toggle this directly.",
+      "Jumping to recent activity keeps the newest file selected. The new activity indicator clears automatically after about five minutes.",
+      "Changing the monitored folders refreshes a frozen activity timeline."
     ]
   }
 }

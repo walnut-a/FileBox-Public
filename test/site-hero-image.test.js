@@ -11,20 +11,27 @@ const heroImagePath = path.join(
   "site",
   "public",
   "images",
-  "filebox-main-window-hero-20260831.png"
+  "filebox-main-window-hero-20261122.png"
+);
+const quickPanelImagePath = path.join(
+  repoRoot,
+  "site",
+  "public",
+  "images",
+  "filebox-quick-window-20261122.png"
 );
 
 test("website hero uses the latest screenshot without cropping it on mobile", () => {
   const appSource = fs.readFileSync(appSourcePath, "utf8");
   const styles = fs.readFileSync(stylesPath, "utf8");
   const mobileStyles = styles.slice(styles.indexOf("@media (max-width: 620px)"));
-  const windowCardStyles = styles.match(/\.window-card\s*{[^}]*}/s)?.[0] ?? "";
+  const windowCardImgStyles = styles.match(/\.window-card img\s*{[^}]*}/s)?.[0] ?? "";
 
-  assert.match(appSource, /filebox-main-window-hero-20260831\.png/);
+  assert.match(appSource, /filebox-main-window-hero-20261122\.png/);
+  assert.match(appSource, /filebox-quick-window-20261122\.png/);
   assert.ok(fs.existsSync(heroImagePath));
-  assert.match(windowCardStyles, /overflow:\s*hidden;/);
-  assert.match(windowCardStyles, /border-radius:\s*4%\s*\/\s*5%;/);
-  assert.match(windowCardStyles, /clip-path:\s*inset\(1px round 4%\s*\/\s*5%\);/);
+  assert.ok(fs.existsSync(quickPanelImagePath));
+  assert.match(windowCardImgStyles, /clip-path:\s*inset\(2px round 20px\);/);
   assert.match(mobileStyles, /\.window-card\s*{[^}]*aspect-ratio:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*height:\s*auto;/s);
   assert.match(mobileStyles, /\.window-card img\s*{[^}]*object-fit:\s*contain;/s);

@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.23",
-  "build": "20261122.2310",
-  "publishedAt": "2026-11-22T15:16:34Z",
+  "version": "1.5.24",
+  "build": "20261123.0050",
+  "publishedAt": "2026-11-22T16:55:49Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.23",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.24",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.23/FileBox_v1.5.23_b20261122.2310.dmg",
-    "size": 7535647,
-    "sha256": "0db46d0a58633592b59d97a4929ffac503e5fa52ebf2e555cc6debca27e8cae2"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.24/FileBox_v1.5.24_b20261123.0050.dmg",
+    "size": 7570657,
+    "sha256": "88933988595a9ed0599fc22da839905d429d386d476b92bb603789c781ddb8e4"
   },
   "summary": {
     "zh-Hans": [
-      "快捷窗口恢复默认置顶，可用顶部图钉切换；通用设置中移除了重复开关。",
-      "自动定位到文件动态后会保留最新文件的选中状态。「新动态」提示会在约 5 分钟后自动消失。",
-      "更改监听目录时，冻结的文件动态时间线会恢复刷新。"
+      "重新索引包含多个 Git 仓库的目录更快，扫描完成时窗口更流畅。",
+      "旧文件移入监听目录后会保留到达日期，同一路径跨天出现时只高亮当天更新的目录行。",
+      "快捷窗口固定置顶，打开后按 ↓ 可选中第一项。修复了窗口左上角按钮部分区域点击无效的问题。"
     ],
     "en": [
-      "The Quick Panel stays on top by default again. Use its pin button to toggle this directly.",
-      "Jumping to recent activity keeps the newest file selected. The new activity indicator clears automatically after about five minutes.",
-      "Changing the monitored folders refreshes a frozen activity timeline."
+      "Reindexing folders that contain multiple Git repositories is faster, and windows stay responsive when scans finish.",
+      "Older files moved into a monitored folder keep their arrival date. When a path appears on multiple days, only the updated day is highlighted.",
+      "The Quick Panel stays on top. Press ↓ after opening it to select the first item. The full area of each window control now responds to clicks."
     ]
   }
 }

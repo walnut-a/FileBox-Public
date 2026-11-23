@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.5.24",
-  "build": "20261123.0050",
-  "publishedAt": "2026-11-22T16:55:49Z",
+  "version": "1.6.0",
+  "build": "20261123.2050",
+  "publishedAt": "2026-11-23T13:01:09Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.5.24",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.0",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.5.24/FileBox_v1.5.24_b20261123.0050.dmg",
-    "size": 7570657,
-    "sha256": "88933988595a9ed0599fc22da839905d429d386d476b92bb603789c781ddb8e4"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.0/FileBox_v1.6.0_b20261123.2050.dmg",
+    "size": 11913427,
+    "sha256": "f96417bce15cb197b338ad7f9b82b8b9b3c8bebd263b9f77aac25d98561867b4"
   },
   "summary": {
     "zh-Hans": [
-      "重新索引包含多个 Git 仓库的目录更快，扫描完成时窗口更流畅。",
-      "旧文件移入监听目录后会保留到达日期，同一路径跨天出现时只高亮当天更新的目录行。",
-      "快捷窗口固定置顶，打开后按 ↓ 可选中第一项。修复了窗口左上角按钮部分区域点击无效的问题。"
+      "在统一预览窗离线查看 STEP、IGES、BREP、STL 和 3MF 模型，支持剖切、测距和装配体展开。",
+      "按空格预览 Markdown、代码、HTML、CSV 和压缩包。可查看网页源码、搜索文档或筛选表格。",
+      "主窗口支持键盘选文件。从文件动态直接定位文件，也可在设置中开启访达空格预览。"
     ],
     "en": [
-      "Reindexing folders that contain multiple Git repositories is faster, and windows stay responsive when scans finish.",
-      "Older files moved into a monitored folder keep their arrival date. When a path appears on multiple days, only the updated day is highlighted.",
-      "The Quick Panel stays on top. Press ↓ after opening it to select the first item. The full area of each window control now responds to clicks."
+      "Inspect STEP, IGES, BREP, STL and 3MF models offline with section cuts, measurements and exploded assembly views.",
+      "Press Space to preview Markdown, code, HTML, CSV and archives. Inspect HTML source, search documents and filter tables.",
+      "Navigate files with the keyboard, jump to a file from Recent Activity, or enable Finder spacebar previews in Settings."
     ]
   }
 }

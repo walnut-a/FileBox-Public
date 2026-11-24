@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.6.0",
-  "build": "20261124.1216",
-  "publishedAt": "2026-11-24T04:22:16Z",
+  "version": "1.6.1",
+  "build": "20261124.2046",
+  "publishedAt": "2026-11-24T12:50:01Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.0",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.1",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.0/FileBox_v1.6.0_b20261124.1216.dmg",
-    "size": 11913219,
-    "sha256": "e4f7570469d2692ac913d2e5c87e78ab9c8bfa8ef5cca6d80a9786191342400f"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.1/FileBox_v1.6.1_b20261124.2046.dmg",
+    "size": 12268029,
+    "sha256": "4a4960a4504486d2221b634695dd451245672393b3df7501593da8a2945b999b"
   },
   "summary": {
     "zh-Hans": [
-      "在统一预览窗离线查看 STEP、IGES、BREP、STL 和 3MF 模型，支持剖切、测距和装配体展开。",
-      "按空格预览 Markdown、代码、HTML、CSV 和压缩包。可查看网页源码、搜索文档或筛选表格。",
-      "快捷窗口呼出时直接显示，取消弹跳动画。主窗口支持键盘选文件，也可从文件动态定位文件。"
+      "可在设置中启用实验性「按创建者」视图，按 AI Agent、项目和工作区浏览文件动态。",
+      "文件动态支持顶栏搜索和键盘浏览，窄窗口也能使用刷新和失败详情。",
+      "优化大目录索引的性能与内存占用，修复访达空格预览的焦点和关闭行为。"
     ],
     "en": [
-      "Inspect STEP, IGES, BREP, STL and 3MF models offline with section cuts, measurements and exploded assembly views.",
-      "Press Space to preview Markdown, code, HTML, CSV and archives. Inspect HTML source, search documents and filter tables.",
-      "The Quick Panel now opens without a bounce. Use the keyboard to select files in the main window or jump to a file from Recent Activity."
+      "Enable the experimental By Creator view in Settings to browse file activity by AI agent, project and worktree.",
+      "Search from the activity toolbar and browse files with the keyboard. Refresh and scan failure details fit in narrow windows.",
+      "Large folders use less memory during indexing. Finder Space previews handle window focus and dismissal more reliably."
     ]
   }
 }

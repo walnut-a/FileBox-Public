@@ -2,26 +2,26 @@
   "schemaVersion": 1,
   "channel": "stable",
   "version": "1.6.0",
-  "build": "20261123.2050",
-  "publishedAt": "2026-11-23T13:01:09Z",
+  "build": "20261124.1216",
+  "publishedAt": "2026-11-24T04:22:16Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
   "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.0",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.0/FileBox_v1.6.0_b20261123.2050.dmg",
-    "size": 11913427,
-    "sha256": "f96417bce15cb197b338ad7f9b82b8b9b3c8bebd263b9f77aac25d98561867b4"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.0/FileBox_v1.6.0_b20261124.1216.dmg",
+    "size": 11913219,
+    "sha256": "e4f7570469d2692ac913d2e5c87e78ab9c8bfa8ef5cca6d80a9786191342400f"
   },
   "summary": {
     "zh-Hans": [
       "在统一预览窗离线查看 STEP、IGES、BREP、STL 和 3MF 模型，支持剖切、测距和装配体展开。",
       "按空格预览 Markdown、代码、HTML、CSV 和压缩包。可查看网页源码、搜索文档或筛选表格。",
-      "主窗口支持键盘选文件。从文件动态直接定位文件，也可在设置中开启访达空格预览。"
+      "快捷窗口呼出时直接显示，取消弹跳动画。主窗口支持键盘选文件，也可从文件动态定位文件。"
     ],
     "en": [
       "Inspect STEP, IGES, BREP, STL and 3MF models offline with section cuts, measurements and exploded assembly views.",
       "Press Space to preview Markdown, code, HTML, CSV and archives. Inspect HTML source, search documents and filter tables.",
-      "Navigate files with the keyboard, jump to a file from Recent Activity, or enable Finder spacebar previews in Settings."
+      "The Quick Panel now opens without a bounce. Use the keyboard to select files in the main window or jump to a file from Recent Activity."
     ]
   }
 }

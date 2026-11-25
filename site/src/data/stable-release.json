@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.6.1",
-  "build": "20261124.2046",
-  "publishedAt": "2026-11-24T12:50:01Z",
+  "version": "1.6.2",
+  "build": "20261125.2205",
+  "publishedAt": "2026-11-25T14:16:25Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.1",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.2",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.1/FileBox_v1.6.1_b20261124.2046.dmg",
-    "size": 12268029,
-    "sha256": "4a4960a4504486d2221b634695dd451245672393b3df7501593da8a2945b999b"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.2/FileBox_v1.6.2_b20261125.2205.dmg",
+    "size": 12316788,
+    "sha256": "ae3da6b104fae0cda0524f62f10896500f0d757c41e99081f4630f4bf62a2b14"
   },
   "summary": {
     "zh-Hans": [
-      "可在设置中启用实验性「按创建者」视图，按 AI Agent、项目和工作区浏览文件动态。",
-      "文件动态支持顶栏搜索和键盘浏览，窄窗口也能使用刷新和失败详情。",
-      "优化大目录索引的性能与内存占用，修复访达空格预览的焦点和关闭行为。"
+      "按创建者浏览文件时，可切换项目工作区、按格式筛选并继续加载。",
+      "内置 CLI 支持按创建者查询，返回项目与工作区信息。独立 Agent Skill 已停用。",
+      "修复应用包图标和切换目录后的列表滚动位置。"
     ],
     "en": [
-      "Enable the experimental By Creator view in Settings to browse file activity by AI agent, project and worktree.",
-      "Search from the activity toolbar and browse files with the keyboard. Refresh and scan failure details fit in narrow windows.",
-      "Large folders use less memory during indexing. Finder Space previews handle window focus and dismissal more reliably."
+      "Switch between project worktrees, filter by file extension, and load more files in the By Creator view.",
+      "Query activity by creator with the built-in CLI and see project and worktree details. The standalone Agent Skill has been retired.",
+      "Fixed app bundle icons and scroll position when navigating between folders."
     ]
   }
 }

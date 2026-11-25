@@ -25,13 +25,9 @@ const cliDocsURL = "https://github.com/walnut-a/FileBox-Public/blob/main/docs/ag
 const releaseURL = "https://github.com/walnut-a/FileBox-Public/releases";
 const releaseNotesURL = stableRelease.releaseNotesURL ?? releaseURL;
 
-const cliSampleOutput = `$ filebox activity --limit 2 --format json
-{
-  "items": [
-    { "project": "filebox", "name": "DESIGN.md", "age": "just now" },
-    { "project": "desktop", "name": "bracket-v2.step", "age": "2m ago" }
-  ]
-}`;
+const cliCommand = "filebox activity --focused --path-only --limit 2";
+const cliSampleOutput = `/Users/alex/Downloads/DESIGN.md
+/Users/alex/Downloads/bracket-v2.step`;
 
 const copy: Record<
   Locale,
@@ -59,8 +55,6 @@ const copy: Record<
     cliEyebrow: string;
     cliTitle: string;
     cliLead: string;
-    cliCommand: string;
-    cliNote: string;
     copyCommand: string;
     copied: string;
     downloadTitle: string;
@@ -124,11 +118,9 @@ const copy: Record<
         body: "输出结构化 JSON 或纯路径列表，让编程 Agent 直接读取最新文件继续工作。"
       }
     ],
-    cliEyebrow: "CLI / Agent Skill",
+    cliEyebrow: "FileBox CLI",
     cliTitle: "给 Agent 的只读入口",
-    cliLead: "安装 App 后，在设置中启用 FileBox CLI；配合 Agent Skill，AI 助手即可按需查询最新文件动态。",
-    cliCommand: "npx filebox-agent-skill install",
-    cliNote: "如果你只是自己在终端查看文件动态，安装 App 内置 CLI 就够了。",
+    cliLead: "在 FileBox 设置中安装命令行工具，终端和 AI 助手就可以查询最近的文件。",
     copyCommand: "复制命令",
     copied: "已复制",
     downloadTitle: "开启更安静的文件工作区",
@@ -191,11 +183,9 @@ const copy: Record<
         body: "Return structured JSON or plain paths so coding Agents pick up the right files immediately."
       }
     ],
-    cliEyebrow: "CLI / Agent Skill",
+    cliEyebrow: "FileBox CLI",
     cliTitle: "A read-only entry point for Agents",
-    cliLead: "Enable the built-in FileBox CLI in Settings, then install the Agent Skill so assistants know how to query recent activity.",
-    cliCommand: "npx filebox-agent-skill install",
-    cliNote: "If you only need terminal access yourself, the built-in CLI is all you need.",
+    cliLead: "Install the CLI in FileBox Settings to query recent files from your terminal or AI assistant.",
     copyCommand: "Copy",
     copied: "Copied",
     downloadTitle: "Start with a quieter file workspace",
@@ -246,11 +236,11 @@ export default function App() {
 
   const handleCopyCommand = async () => {
     try {
-      await navigator.clipboard.writeText(text.cliCommand);
+      await navigator.clipboard.writeText(cliCommand);
       setCopied(true);
     } catch {
       const textarea = document.createElement("textarea");
-      textarea.value = text.cliCommand;
+      textarea.value = cliCommand;
       textarea.style.position = "fixed";
       textarea.style.opacity = "0";
       document.body.appendChild(textarea);
@@ -423,16 +413,15 @@ export default function App() {
             <p className="eyebrow">{text.cliEyebrow}</p>
             <h2>{text.cliTitle}</h2>
             <p>{text.cliLead}</p>
-            <p className="soft-note">{text.cliNote}</p>
           </div>
           <div className="cli-showcase">
-            <div className="terminal-card" aria-label="Agent Skill install command">
+            <div className="terminal-card" aria-label="FileBox CLI">
               <div className="terminal-dots" aria-hidden="true">
                 <span />
                 <span />
                 <span />
               </div>
-              <code>{text.cliCommand}</code>
+              <code>{cliCommand}</code>
               <button
                 type="button"
                 className={`copy-button${copied ? " is-copied" : ""}`}
@@ -485,7 +474,7 @@ export default function App() {
       <footer>
         <span>{text.footer}</span>
         <div className="footer-links">
-          <a href={cliDocsURL}>CLI / Agent Skill</a>
+          <a href={cliDocsURL}>FileBox CLI</a>
           <a href={releaseURL}>Releases</a>
         </div>
       </footer>

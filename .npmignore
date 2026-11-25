@@ -1,8 +1,0 @@
-.git/
-test/
-scripts/
-images/
-*.tgz
-.env
-.env.*
-.npmrc

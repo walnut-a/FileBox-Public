@@ -2,7 +2,7 @@
 
 FileBox 是一个 macOS 本地文件快捷访问工具，适合快速打开常用目录、整理下载文件、使用快捷窗口处理临时文件，并通过文件动态关注重点目录里的变化。
 
-这个公开仓库用于发布 FileBox 安装包、维护公开官网、公开文档、Agent Skill 和 npm 安装器。FileBox App 主体源码不在这个仓库中。
+这个公开仓库用于发布 FileBox 安装包、维护公开官网和 CLI 文档。FileBox App 主体源码不在这个仓库中。
 
 官网地址：[getfilebox.app](https://getfilebox.app)
 
@@ -22,12 +22,10 @@ FileBox 完全在本地运行。它提供快捷访问、文件动态和路径查
 | --- | --- |
 | [Releases](https://github.com/walnut-a/FileBox-Public/releases) | FileBox 正式安装包 |
 | [`site`](./site) | getfilebox.app 官网源码 |
-| [`docs/agent-cli-and-skill.md`](./docs/agent-cli-and-skill.md) | FileBox CLI 与 Agent Skill 使用说明 |
-| [`skills/filebox-activity`](./skills/filebox-activity) | 面向 Agent 的 FileBox Activity Skill |
-| [`bin/filebox-agent-skill.js`](./bin/filebox-agent-skill.js) | Skill 安装命令入口 |
+| [`docs/agent-cli-and-skill.md`](./docs/agent-cli-and-skill.md) | FileBox CLI 使用说明 |
 | [`scripts/check_no_secrets.sh`](./scripts/check_no_secrets.sh) | 公开仓库安全检查脚本 |
 
-## CLI 与 Agent Skill
+## CLI
 
 安装 FileBox 后，可以在应用内打开 `设置` -> `通用` -> `命令行工具`，安装只读 FileBox CLI。它在终端里的命令名是 `filebox`。
 
@@ -47,19 +45,7 @@ filebox activity --focused --json --limit 20
 filebox activity --all --json --limit 50
 ```
 
-Agent Skill 是给模型或 Agent 读取的使用说明。它不会替代 CLI，也不会直接操作文件；它只是告诉 Agent 应该先检查 FileBox CLI 是否可用，再读取常用目录和文件动态，并优先使用用户配置的关注后缀。
-
-面向 Agent 的 Skill 可以单独安装和更新：
-
-```bash
-npx filebox-agent-skill install
-```
-
-如果你只是自己在终端里查看文件动态，安装 CLI 就够了。如果你希望 Codex 或其他 Agent 更稳定地理解 FileBox 数据，再安装 Agent Skill。
-
-CLI 与 Skill 的完整中文说明见 [`docs/agent-cli-and-skill.md`](./docs/agent-cli-and-skill.md)。
-
-![](https://github.com/walnut-a/FileBox-Public/blob/main/images/filebox-settings-cli-20260428.png?raw=true)
+更多示例见 [FileBox CLI 使用说明](./docs/agent-cli-and-skill.md)。
 
 ## 核心功能
 
@@ -93,9 +79,9 @@ npm run check:release
 
 这会检查：
 
-- Agent Skill 安装器测试
+- 官网资源和更新清单测试
 - 公开仓库内容结构
-- npm 发布包是否误带 token 或私有内容
+- 公开文件中是否包含敏感凭据
 
 本地配置 `.githooks/pre-push` 后，执行 `git push` 前会自动运行同一套检查。
 
@@ -104,7 +90,3 @@ npm run check:release
 ```bash
 npm run site:build
 ```
-
-## 许可说明
-
-Agent Skill 和 npm 安装器按 [`package.json`](./package.json) 中声明的 MIT license 发布。FileBox App 主体源码不在这个公开仓库中。

@@ -549,11 +549,6 @@ h3 {
   border-top: 1px solid var(--line-strong);
 }
 
-.soft-note {
-  color: var(--ink-soft) !important;
-  font-size: 0.94rem !important;
-}
-
 .cli-showcase {
   display: grid;
   gap: var(--space-sm);

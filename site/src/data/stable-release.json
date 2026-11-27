@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.6.3",
-  "build": "20261126.2049",
-  "publishedAt": "2026-11-26T12:59:40Z",
+  "version": "1.6.4",
+  "build": "20261127.2039",
+  "publishedAt": "2026-11-27T12:44:30Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.3",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.4",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.3/FileBox_v1.6.3_b20261126.2049.dmg",
-    "size": 12404741,
-    "sha256": "2117d72a2d74d74e02e1e894f2f1b406802c34ff508948c58657caaf70a8eb0d"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.4/FileBox_v1.6.4_b20261127.2039.dmg",
+    "size": 13534494,
+    "sha256": "34cffa033e6956e13e82a3f27733dd6dc774668785ec5fa94f3efb61c4e66aec"
   },
   "summary": {
     "zh-Hans": [
-      "3D 预览可按轴旋转、翻面及还原方向，并支持更多 STEP 文件。",
-      "加快文件动态摘要读取，目录详情支持展开或隐藏已删除文件。",
-      "修复移动或改名后路径过时、文件误标为已删除以及搜索遗漏的问题。"
+      "新增 GLB、glTF、OBJ、PLY 和 STPZ 模型预览，加快大型模型加载。",
+      "Markdown 可离线查看 Mermaid 图表和数学公式，支持大纲、查找和代码复制。",
+      "最小化预览后，可从 FileBox 的 Dock 右键菜单按文件名恢复窗口。"
     ],
     "en": [
-      "Rotate, flip, or reset models in 3D previews and open more STEP files.",
-      "Load activity summaries faster and show or hide deleted files in folder details.",
-      "Keep activity paths and search results up to date when files move or folders are renamed."
+      "Preview GLB, glTF, OBJ, PLY and STPZ models, with faster loading for large models.",
+      "Read Mermaid diagrams and math offline in Markdown, navigate the outline, search and copy code.",
+      "Restore a minimized preview by its filename from the FileBox Dock menu."
     ]
   }
 }

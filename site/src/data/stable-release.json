@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "channel": "stable",
-  "version": "1.6.5",
-  "build": "20261128.0314",
-  "publishedAt": "2026-11-27T19:20:15Z",
+  "version": "1.6.6",
+  "build": "20261128.1923",
+  "publishedAt": "2026-11-28T11:30:15Z",
   "minimumSystemVersion": "14.0",
   "downloadPageURL": "https://getfilebox.app/#download",
-  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.5",
+  "releaseNotesURL": "https://github.com/walnut-a/FileBox-Public/releases/tag/V1.6.6",
   "asset": {
-    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.5/FileBox_v1.6.5_b20261128.0314.dmg",
-    "size": 13743061,
-    "sha256": "dba5b67298765fb1fd9ba6c02f9c605169b38e334947666be0082da9349774cc"
+    "url": "https://github.com/walnut-a/FileBox-Public/releases/download/V1.6.6/FileBox_v1.6.6_b20261128.1923.dmg",
+    "size": 13637153,
+    "sha256": "d9df8232fb4328175590a53b780a515bf85111e4fb8744551080144621e4ffd0"
   },
   "summary": {
     "zh-Hans": [
-      "主窗口新增可调整宽度的右侧预览栏，按方向键即可连续浏览文件。",
-      "按空格可打开独立预览窗口，选中文件夹可查看位置与可见项目数。",
-      "文件动态卡片会用父目录区分同名文件，浏览大文件夹时切换更流畅。"
+      "主窗口变窄时，工具栏会横跨文件列表和预览栏，操作按钮仍可见。",
+      "HTML 预览的全局脚本开关在窗口之间同步，重启后也会保留。",
+      "主窗口、快捷窗口和设置页统一使用单色系统图标，界面动效跟随系统的「减少动态效果」设置。"
     ],
     "en": [
-      "Use the resizable preview pane in the main window and browse files with the arrow keys.",
-      "Press Space for a separate preview window, or select a folder to see its location and visible item count.",
-      "Activity cards distinguish files with the same name by their parent folders. Switching away from a large folder stops the count."
+      "In narrow windows, the toolbar spans the file list and preview pane to keep actions visible.",
+      "The global HTML script setting syncs across previews and is remembered after restarting FileBox.",
+      "The main window, quick panel, and settings use matching monochrome system icons. Animations respect Reduce Motion."
     ]
   }
 }
